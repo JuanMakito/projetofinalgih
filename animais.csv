@@ -1,0 +1,42 @@
+tipo_pet,horas_cuidado,alimentacao,saude,idade,temperamento,brincadeiras_preferidas
+Cachorro,3,200,Sim,5,Alegre,Frisbee
+Gato,2,150,Sim,3,Independente,Bolas de lã
+Pássaro,1,50,Não,2,Animado,Cantar
+Cachorro,4,250,Sim,7,Protetor,Buscar
+Gato,1,100,Sim,4,Curtoso,Papel amassado
+Cachorro,2,180,Sim,3,Brincalhão,Agility
+Gato,3,120,Sim,6,Curioso,Caixa de papel
+Pássaro,1,40,Sim,1,Social,Cantar
+Cachorro,5,300,Sim,4,Protetor,Passeio
+Gato,2,110,Não,2,Reservado,Camas quentes
+Cachorro,6,350,Sim,8,Calmo,Frisbee
+Gato,4,130,Sim,5,Alegre,Caçar brinquedos
+Pássaro,2,60,Sim,3,Ativo,Brincar com sinos
+Cachorro,3,220,Sim,2,Protetor,Correr no parque
+Gato,1,90,Sim,3,Independente,Escalar
+Cachorro,4,260,Sim,6,Cuidado,Buscar
+Gato,2,140,Sim,7,Brincalhão,Interagir com laser
+Pássaro,1,55,Sim,4,Animado,Explorar
+Cachorro,5,310,Sim,5,Alegre,Jogging
+Gato,3,115,Sim,2,Curtoso,Bolsas de papel
+Cachorro,2,175,Sim,1,Brincalhão,Frisbee
+Gato,4,125,Não,3,Independente,Escalar
+Pássaro,2,70,Sim,5,Social,Cantar
+Cachorro,3,230,Sim,4,Protetor,Passeio
+Gato,2,105,Sim,8,Alegre,Camas quentes
+Cachorro,6,340,Sim,7,Cuidado,Buscar
+Gato,1,85,Sim,3,Curioso,Papel amassado
+Pássaro,1,45,Sim,2,Animado,Brincar com sinos
+Coelho,1,30,Sim,2,Brincalhão,Escavar
+Hamster,1,25,Sim,1,Ativo,Rodinha
+Peixe,0.5,10,Sim,1,Calmo,Explorar o aquário
+Porquinho-da-índia,1.5,20,Sim,3,Social,Esconderijos
+Gato,2,120,Sim,5,Curioso,Bolas de papel
+Cachorro,3,200,Sim,6,Protetor,Frisbee
+Coelho,2,40,Sim,3,Brincalhão,Tapetes para roer
+Hamster,1,15,Sim,1,Ativo,Rodinha
+Peixe,0.5,12,Sim,2,Calmo,Explorar o aquário
+Porquinho-da-índia,2,25,Sim,4,Social,Brincadeiras em grupo
+Cachorro,4,250,Sim,5,Alegre,Passeios
+Gato,3,135,Sim,6,Independente,Papel amassado
+Pássaro,2,65,Não,3,Animado,Cantar
