@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import seaborn as sns
@@ -8,244 +7,186 @@ from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.metrics import confusion_matrix, classification_report
 import mysql.connector
 
-# Função para conectar ao banco de dados
+# Configuração inicial
+st.set_page_config(page_title="Cuidados Pet", layout="centered")
+
+# Estilo CSS Customizado
+def apply_custom_css():
+    st.markdown("""
+    <style>
+        /* Estilo Global */
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Estilo para títulos */
+        h1, h2, h3 {
+            color: #2d6a4f;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+        /* Estilo para botões */
+        .stButton button {
+            background-color: #52b788;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .stButton button:hover {
+            background-color: #40916c;
+        }
+        /* Estilo de cards para as seções */
+        .section-card {
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        /* Caixa de busca e formulário de contato */
+        .stTextInput, .stTextArea {
+            margin-top: 1rem;
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 2rem;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
+apply_custom_css()
+
+# Funções para conectar ao banco de dados e realizar o cadastro
 def connect_db():
     return mysql.connector.connect(
         host="localhost",
-        user="root",  # Altere para seu usuário
-        password="senai@123",  # Altere para sua senha
-        database="petscare"  # Altere para o nome do seu banco de dados
+        user="root",
+        password="senai@123",
+        database="petscare"
     )
 
-# Função para criar tabelas no MySQL
-def create_tables():
-    conn = connect_db()
-    cursor = conn.cursor()
-    cursor.execute("""
-    CREATE TABLE IF NOT EXISTS pets (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        nome VARCHAR(255),
-        tipo VARCHAR(255),
-        idade INT,
-        cuidados TEXT,
-        condicoes_saude TEXT
-    )
-    """)
-    cursor.execute("""
-    CREATE TABLE IF NOT EXISTS cadastro (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        nome_dono VARCHAR(255),
-        email VARCHAR(255),
-        pet_tipo VARCHAR(255)
-    )
-    """)
-    conn.commit()
-    cursor.close()
-    conn.close()
+def register_owner(name, email, pet_type):
+    with connect_db() as conn:
+        with conn.cursor() as cursor:
+            cursor.execute("INSERT INTO cadastro (nome_dono, email, pet_tipo) VALUES (%s, %s, %s)", (name, email, pet_type))
+            conn.commit()
 
-# Criar tabelas ao iniciar o aplicativo
-create_tables()
-
-# Estilos CSS
-st.markdown(
-    """
-    <style>
-    /* Estilo básico para o corpo */
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f9f9f9;
-        color: #333;
-    }
-
-    /* Cabeçalho principal */
-    h1 {
-        text-align: center;
-        color: #4CAF50;
-        font-size: 2.5rem;
-        margin-top: 20px;
-    }
-
-    /* Subtítulos */
-    h2, h3 {
-        color: #333;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    /* Botões */
-    button {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-        background-color: #45a049;
-    }
-
-    /* Estilo para DataFrames */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
-    table thead {
-        background-color: #4CAF50;
-        color: white;
-    }
-
-    table th, table td {
-        padding: 12px;
-        text-align: center;
-        border-bottom: 1px solid #ddd;
-    }
-
-    table tbody tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    /* Upload de arquivo */
-    input[type="file"] {
-        display: block;
-        margin: 20px auto;
-        padding: 10px;
-    }
-
-    /* Elementos de gráfico */
-    .plotly-graph {
-        border-radius: 15px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Boxplot e gráficos */
-    .plot-container {
-        margin-top: 30px;
-        background-color: white;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Avisos e alertas */
-    .warning {
-        color: #e74c3c;
-        background-color: #fce4e4;
-        border: 1px solid #e74c3c;
-        border-radius: 5px;
-        padding: 10px;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    /* Container principal */
-    .stApp {
-        max-width: 900px;
-        margin: auto;
-        padding: 20px;
-    }
-
-    /* Links */
-    a {
-        color: #4CAF50;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# Carregar o Dataset
-st.title("Cuidados de Pets")
-uploaded_file = st.file_uploader("Escolha um arquivo CSV", type="csv")
-
-if uploaded_file is not None:
-    data = pd.read_csv(uploaded_file)
-    st.write(data.head())
-
-    # Análise Exploratória de Dados (EDA)
-    st.subheader("Análise Exploratória")
-    st.write(data.describe())
-
-    # Visualizações
-    st.subheader("Distribuição de Variáveis")
-    sns.histplot(data['idade'], bins=30)
-    st.pyplot()
-
-    sns.boxplot(x='tipo', y='idade', data=data)
-    st.pyplot()
-
-    st.subheader("Correlação entre Variáveis")
-    correlation = data.corr()
-    sns.heatmap(correlation, annot=True, cmap='coolwarm')
-    st.pyplot()
-
-    # Engenharia de Variáveis
-    st.subheader("Engenharia de Variáveis")
-    st.write("Descrição de variáveis:")
-    st.write(data.dtypes)
-
-    data['idade_cat'] = pd.cut(data['idade'], bins=[0, 1, 5, 10, 15], labels=['Filhote', 'Jovem', 'Adulto', 'Idoso'])
-    st.write(data['idade_cat'].value_counts())
-
-    # Modelo de Regressão
-    st.subheader("Modelo de Regressão")
-    target = st.selectbox("Selecione a variável alvo:", options=data.columns)
-
-    if data[target].dtype in ['float64', 'int64']:
-        X = data.drop(columns=[target])
-        y = data[target]
-
-        if st.button("Executar Regressão Linear"):
-            model = LinearRegression().fit(X, y)
-            st.write(f"Coeficientes: {model.coef_}")
-            st.write(f"Intercepto: {model.intercept_}")
-
-            plt.scatter(X.iloc[:, 0], y)
-            plt.plot(X.iloc[:, 0], model.predict(X), color='red')
-            st.pyplot()
+# Função de Análise de Dados
+def data_analysis():
+    st.title("Análise de Dados")
+    csv_file_path = r'C:\Users\ead\Desktop\projetinhomanha\animais.csv'
     
-    elif data[target].dtype == 'object':
-        X = data.drop(columns=[target])
-        y = data[target]
+    @st.cache_data
+    def load_data():
+        data = pd.read_csv(csv_file_path)
+        return data
 
-        if st.button("Executar Regressão Logística"):
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-            model = LogisticRegression(max_iter=200)
-            model.fit(X_train, y_train)
-            y_pred = model.predict(X_test)
+    data = load_data()
+    
+    st.subheader("Visualização das Primeiras Linhas dos Dados")
+    st.write(data.head())
+    
+    st.subheader("Estatísticas Descritivas")
+    st.write(data.describe())
+    
+    st.subheader("Informações do Dataset")
+    buffer = data.info(buf=None)
+    st.text(buffer)
 
-            st.write(confusion_matrix(y_test, y_pred))
-            st.write(classification_report(y_test, y_pred))
+# Funções de Conteúdo do Site
+def homepage():
+    st.image("https://www.jornalspnorte.com.br/wp-content/uploads/2015/12/1812_jornal-do-futuro-animais-domesticos.jpg", use_column_width=True)
+    st.title("Bem-vindo ao Cuidados Pet!")
+    st.write("Descubra dicas essenciais e serviços para melhorar o bem-estar dos seus pets.")
+    st.markdown("### Destaques Recentes")
 
-    # Cadastro de Donos de Pets
-    st.subheader("Cadastro de Donos de Pets")
+def care_section():
+    st.title("Seção de Cuidados")
+    st.write("Artigos e dicas sobre cuidados essenciais para diferentes animais.")
+    st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+
+def health_section():
+    st.title("Saúde e Bem-Estar")
+    st.write("Informações e recomendações sobre a saúde dos pets.")
+
+def adopt_section():
+    st.title("Adote um Pet")
+    st.write("Animais disponíveis para adoção e histórias de sucesso.")
+
+def community_section():
+    st.title("Comunidade")
+    st.write("Espaço para troca de experiências entre donos de pets.")
+
+def shop_section():
+    st.title("Loja de Produtos")
+    products = pd.DataFrame({
+        "Produto": ["Ração", "Brinquedo", "Cama"],
+        "Preço": ["R$50", "R$20", "R$100"]
+    })
+    st.table(products)
+
+def blog_section():
+    st.title("Blog")
+    st.write("Artigos regulares sobre o mundo pet.")
+
+def contact_section():
+    st.title("Contato")
+    st.write("Entre em contato conosco.")
+    with st.form("contact_form"):
+        name = st.text_input("Nome")
+        email = st.text_input("Email")
+        message = st.text_area("Mensagem")
+        submitted = st.form_submit_button("Enviar")
+        if submitted:
+            st.success("Mensagem enviada com sucesso!")
+
+def pet_registration():
+    st.title("Cadastro de Donos de Pets")
     nome_dono = st.text_input("Nome do Dono")
     email = st.text_input("Email do Dono")
     pet_tipo = st.text_input("Tipo do Pet")
-
     if st.button("Cadastrar"):
-        conn = connect_db()
-        cursor = conn.cursor()
-        cursor.execute("INSERT INTO cadastro (nome_dono, email, pet_tipo) VALUES (%s, %s, %s)", (nome_dono, email, pet_tipo))
-        conn.commit()
-        cursor.close()
-        conn.close()
-        st.success("Cadastro realizado com sucesso!")
+        if nome_dono and email and pet_tipo:
+            register_owner(nome_dono, email, pet_tipo)
+            st.success("Cadastro realizado com sucesso!")
 
-# Conclusão
-st.markdown("""
-### Conclusão
-Este aplicativo permite que os donos de pets compreendam melhor os cuidados necessários e os ajude a tomar decisões informadas sobre a saúde e o bem-estar de seus animais.
-""")
+# Navegação por Tabs
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs([
+    "Página Inicial", "Cuidados", "Saúde", "Adoção", 
+    "Comunidade", "Loja", "Blog", "Análise de Dados", "Cadastro de Pets"
+])
+
+# Conteúdo de cada Tab
+with tab1:
+    homepage()
+with tab2:
+    care_section()
+with tab3:
+    health_section()
+with tab4:
+    adopt_section()
+with tab5:
+    community_section()
+with tab6:
+    shop_section()
+with tab7:
+    blog_section()
+with tab8:
+    data_analysis()
+with tab9:
+    pet_registration()
+
+# Rodapé
+st.markdown("<footer>&copy; 2023 Cuidados Pet - Todos os direitos reservados.</footer>", unsafe_allow_html=True)
