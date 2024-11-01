@@ -118,8 +118,64 @@ def care_section():
     st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
 def health_section():
-    st.title("Saúde e Bem-Estar")
-    st.write("Informações e recomendações sobre a saúde dos pets.")
+    st.title("Saúde e Bem-Estar dos Pets")
+    st.write("Bem-vindo à seção de Saúde e Bem-Estar! Aqui você encontrará informações valiosas e recomendações para garantir que seus animais de estimação vivam de forma saudável e feliz.")
+
+    st.header("Dicas de Nutrição")
+    st.write("Uma alimentação equilibrada é essencial para a saúde do seu pet. Considere as seguintes orientações:")
+    st.markdown("- **Ração de qualidade:** Escolha marcas reconhecidas e adequadas à idade e tamanho do seu animal.")
+    st.markdown("- **Alimentos proibidos:** Evite dar chocolate, cebola, uvas e alimentos muito gordurosos.")
+    st.markdown("- **Consulte um veterinário:** Para orientações específicas sobre a dieta do seu pet.")
+
+    st.header("Exercícios e Atividades")
+    st.write("A atividade física ajuda a manter seu pet saudável e feliz. Algumas sugestões incluem:")
+    st.markdown("- **Caminhadas diárias:** Pelo menos 30 minutos de exercício para cães.")
+    st.markdown("- **Brincadeiras interativas:** Use brinquedos que estimulem o raciocínio, como quebra-cabeças.")
+    st.markdown("- **Atividades de agilidade:** Experimente cursos de obstáculos para cães.")
+
+    st.header("Cuidados de Saúde")
+    st.write("Manter a saúde do seu pet é crucial. Fique atento a:")
+    st.markdown("- **Vacinas:** Mantenha a vacinação em dia para prevenir doenças.")
+    st.markdown("- **Check-ups anuais:** Visitas regulares ao veterinário ajudam a detectar problemas precocemente.")
+    st.markdown("- **Sinais de alerta:** Observe alterações no comportamento, apetite ou energia do seu pet.")
+
+    st.header("Higiene e Cuidados Pessoais")
+    st.write("A higiene adequada é fundamental. Considere estas práticas:")
+    st.markdown("- **Banho regular:** A frequência depende da raça e estilo de vida do pet.")
+    st.markdown("- **Escovação dos dentes:** Use escovas e pastas específicas para pets, pelo menos uma vez por semana.")
+    st.markdown("- **Corte de unhas:** Verifique e corte as unhas regularmente para evitar desconforto.")
+
+    st.header("Saúde Mental")
+    st.write("Assim como nós, os pets também precisam de cuidados mentais. Algumas dicas incluem:")
+    st.markdown("- **Enriquecimento ambiental:** Proporcione brinquedos variados e espaços para explorar.")
+    st.markdown("- **Socialização:** Exponha seu pet a diferentes ambientes e outros animais.")
+    st.markdown("- **Rotina:** Mantenha horários regulares para alimentação e passeios.")
+
+    st.header("Espaço para Dúvidas")
+    st.write("Tem alguma dúvida sobre a saúde do seu pet? Confira nossa seção de perguntas frequentes ou envie suas perguntas!")
+    st.text_input("Digite sua dúvida aqui:")
+
+    st.header("Artigos e Recursos")
+    st.write("Aprofunde-se em temas de saúde animal com nossos recursos recomendados:")
+    st.markdown("- **Artigos:** [Saúde Animal](https://exemplo.com/artigos) - Uma coleção de artigos sobre cuidados com pets.")
+    st.markdown("- **Livros:** 'O que seu animal está tentando lhe dizer' - um guia prático para entender seu pet.")
+    st.markdown("- **Vídeos:** [Canal do YouTube](https://youtube.com/exemplo) - Dicas de cuidados e treinamento.")
+
+    st.header("Comunidade")
+    st.write("Participe da nossa comunidade e compartilhe suas experiências!")
+    st.text_area("Conte-nos sua história ou dicas sobre cuidados com pets:")
+
+    st.header("Consultas com Especialistas")
+    st.write("Para cuidados mais específicos, entre em contato com um especialista:")
+    st.markdown("- **Veterinários locais:** Confira nossa lista de veterinários recomendados.")
+    st.markdown("- **Comportamentalistas:** Consulte especialistas para lidar com comportamentos problemáticos.")
+    st.markdown("- **Clínicas de emergência:** Saiba onde encontrar atendimento em situações urgentes.")
+
+    st.header("Histórias de Sucesso")
+    st.write("Inspire-se com histórias de donos que melhoraram a saúde de seus pets. Veja como eles fizeram isso!")
+    st.markdown("- **Caso 1:** O João transformou a dieta da sua gata e ela perdeu peso e ganhou energia.")
+    st.markdown("- **Caso 2:** A Maria implementou uma rotina de exercícios para seu cachorro e agora eles têm passeios diários juntos.")
+
 
 def adopt_section():
     st.title("Adote um Pet")
