@@ -1,42 +1,1001 @@
-tipo_pet,horas_cuidado,alimentacao,saude,idade,temperamento,brincadeiras_preferidas
-Cachorro,3,200,Sim,5,Alegre,Frisbee
-Gato,2,150,Sim,3,Independente,Bolas de lã
-Pássaro,1,50,Não,2,Animado,Cantar
-Cachorro,4,250,Sim,7,Protetor,Buscar
-Gato,1,100,Sim,4,Curtoso,Papel amassado
-Cachorro,2,180,Sim,3,Brincalhão,Agility
-Gato,3,120,Sim,6,Curioso,Caixa de papel
-Pássaro,1,40,Sim,1,Social,Cantar
-Cachorro,5,300,Sim,4,Protetor,Passeio
-Gato,2,110,Não,2,Reservado,Camas quentes
-Cachorro,6,350,Sim,8,Calmo,Frisbee
-Gato,4,130,Sim,5,Alegre,Caçar brinquedos
-Pássaro,2,60,Sim,3,Ativo,Brincar com sinos
-Cachorro,3,220,Sim,2,Protetor,Correr no parque
-Gato,1,90,Sim,3,Independente,Escalar
-Cachorro,4,260,Sim,6,Cuidado,Buscar
-Gato,2,140,Sim,7,Brincalhão,Interagir com laser
-Pássaro,1,55,Sim,4,Animado,Explorar
-Cachorro,5,310,Sim,5,Alegre,Jogging
-Gato,3,115,Sim,2,Curtoso,Bolsas de papel
-Cachorro,2,175,Sim,1,Brincalhão,Frisbee
-Gato,4,125,Não,3,Independente,Escalar
-Pássaro,2,70,Sim,5,Social,Cantar
-Cachorro,3,230,Sim,4,Protetor,Passeio
-Gato,2,105,Sim,8,Alegre,Camas quentes
-Cachorro,6,340,Sim,7,Cuidado,Buscar
-Gato,1,85,Sim,3,Curioso,Papel amassado
-Pássaro,1,45,Sim,2,Animado,Brincar com sinos
-Coelho,1,30,Sim,2,Brincalhão,Escavar
-Hamster,1,25,Sim,1,Ativo,Rodinha
-Peixe,0.5,10,Sim,1,Calmo,Explorar o aquário
-Porquinho-da-índia,1.5,20,Sim,3,Social,Esconderijos
-Gato,2,120,Sim,5,Curioso,Bolas de papel
-Cachorro,3,200,Sim,6,Protetor,Frisbee
-Coelho,2,40,Sim,3,Brincalhão,Tapetes para roer
-Hamster,1,15,Sim,1,Ativo,Rodinha
-Peixe,0.5,12,Sim,2,Calmo,Explorar o aquário
-Porquinho-da-índia,2,25,Sim,4,Social,Brincadeiras em grupo
-Cachorro,4,250,Sim,5,Alegre,Passeios
-Gato,3,135,Sim,6,Independente,Papel amassado
-Pássaro,2,65,Não,3,Animado,Cantar
+Animal,Status de Extinção,Motivo,Consequência,Região,Ano
+Gorila,Poluição,Poluição,Menos preocupante,América do Norte,1975
+Tartaruga Marinha,Caça ilegal,Caça ilegal,Menos preocupante,África,1974
+Golfinho,Mudanças climáticas,Mudanças climáticas,Vulnerável,África,2001
+Tigre Branco,Caça ilegal,Poluição,Vulnerável,Oceania,2001
+Lince,Perda de habitat,Caça ilegal,Menos preocupante,Ásia,2009
+Leão,Poluição,Perda de habitat,Crítico,África,1946
+Macaco Prego,Mudanças climáticas,Mudanças climáticas,Vulnerável,América do Norte,1903
+Gorila,Outros,Outros,Crítico,América do Norte,1901
+Tartaruga Marinha,Poluição,Poluição,Vulnerável,Oceania,2013
+Lince,Outros,Perda de habitat,Em perigo,Ásia,1913
+Golfinho,Caça ilegal,Mudanças climáticas,Vulnerável,Oceania,1922
+Lince,Outros,Mudanças climáticas,Crítico,Ásia,1952
+Leão,Perda de habitat,Outros,Vulnerável,Europa,1972
+Elefante,Outros,Outros,Em perigo,América do Sul,1971
+Leão,Perda de habitat,Caça ilegal,Em perigo,América do Norte,1911
+Panda Gigante,Caça ilegal,Poluição,Crítico,África,1952
+Lobo Cinzento,Perda de habitat,Caça ilegal,Vulnerável,África,1925
+Orangotango,Mudanças climáticas,Outros,Em perigo,Ásia,1923
+Golfinho,Mudanças climáticas,Perda de habitat,Menos preocupante,Europa,1966
+Águia Real,Outros,Poluição,Quase ameaçado,Ásia,1997
+Golfinho,Caça ilegal,Poluição,Menos preocupante,África,2001
+Urso Polar,Perda de habitat,Outros,Crítico,Europa,1964
+Panda Gigante,Mudanças climáticas,Poluição,Quase ameaçado,América do Norte,1912
+Orangotango,Perda de habitat,Mudanças climáticas,Vulnerável,Europa,1995
+Águia Real,Outros,Mudanças climáticas,Em perigo,América do Sul,1993
+Jacaré Americano,Mudanças climáticas,Perda de habitat,Menos preocupante,América do Sul,1930
+Urso Polar,Poluição,Mudanças climáticas,Vulnerável,América do Norte,1922
+Lince,Caça ilegal,Mudanças climáticas,Crítico,Europa,1955
+Tartaruga Marinha,Mudanças climáticas,Poluição,Quase ameaçado,América do Norte,1904
+Urso Polar,Outros,Perda de habitat,Menos preocupante,América do Norte,1996
+Macaco Prego,Caça ilegal,Mudanças climáticas,Quase ameaçado,Europa,1927
+Orangotango,Perda de habitat,Outros,Quase ameaçado,América do Norte,1927
+Panda Gigante,Mudanças climáticas,Perda de habitat,Vulnerável,Ásia,2005
+Águia Real,Mudanças climáticas,Mudanças climáticas,Quase ameaçado,África,1984
+Urso Polar,Poluição,Caça ilegal,Vulnerável,Europa,1984
+Tigre de Bengala,Poluição,Outros,Crítico,América do Sul,1959
+Golfinho,Outros,Perda de habitat,Em perigo,Europa,1971
+Tartaruga Marinha,Mudanças climáticas,Perda de habitat,Crítico,América do Norte,1957
+Tartaruga Marinha,Mudanças climáticas,Mudanças climáticas,Em perigo,América do Sul,1951
+Elefante,Outros,Outros,Crítico,América do Sul,2009
+Iguana Verde,Poluição,Outros,Vulnerável,América do Sul,1976
+Gorila,Caça ilegal,Poluição,Menos preocupante,América do Sul,1991
+Urso Polar,Caça ilegal,Caça ilegal,Quase ameaçado,África,1930
+Panda Gigante,Perda de habitat,Perda de habitat,Crítico,África,1937
+Tartaruga Marinha,Mudanças climáticas,Mudanças climáticas,Crítico,América do Norte,1931
+Lince,Caça ilegal,Perda de habitat,Crítico,Europa,1941
+Golfinho,Poluição,Outros,Quase ameaçado,Oceania,1992
+Elefante,Poluição,Poluição,Menos preocupante,América do Sul,1948
+Orangotango,Perda de habitat,Perda de habitat,Quase ameaçado,América do Sul,1937
+Gorila,Mudanças climáticas,Poluição,Quase ameaçado,Oceania,1945
+Urso Polar,Poluição,Caça ilegal,Crítico,África,1980
+Iguana Verde,Outros,Outros,Crítico,Europa,1934
+Tigre Branco,Caça ilegal,Mudanças climáticas,Em perigo,Oceania,2004
+Orangotango,Outros,Caça ilegal,Crítico,Oceania,1994
+Tigre de Bengala,Perda de habitat,Mudanças climáticas,Em perigo,América do Sul,1955
+Tigre de Bengala,Outros,Mudanças climáticas,Vulnerável,América do Norte,2024
+Gorila,Mudanças climáticas,Caça ilegal,Vulnerável,América do Norte,1978
+Elefante,Mudanças climáticas,Perda de habitat,Crítico,África,1929
+Tubarão Branco,Perda de habitat,Outros,Crítico,Europa,1986
+Elefante,Outros,Perda de habitat,Menos preocupante,África,1940
+Gorila,Caça ilegal,Perda de habitat,Quase ameaçado,Oceania,1992
+Tigre Branco,Mudanças climáticas,Outros,Em perigo,América do Norte,1979
+Panda Gigante,Mudanças climáticas,Outros,Crítico,África,1905
+Golfinho,Outros,Perda de habitat,Crítico,Ásia,1942
+Águia Real,Perda de habitat,Perda de habitat,Vulnerável,América do Sul,1930
+Leão,Poluição,Outros,Vulnerável,América do Sul,1951
+Tigre Branco,Poluição,Mudanças climáticas,Vulnerável,Europa,1989
+Panda Gigante,Caça ilegal,Caça ilegal,Em perigo,América do Sul,1948
+Panda Gigante,Caça ilegal,Outros,Vulnerável,América do Sul,1935
+Golfinho,Perda de habitat,Mudanças climáticas,Vulnerável,América do Norte,1988
+Jacaré Americano,Perda de habitat,Caça ilegal,Vulnerável,Ásia,1923
+Orangotango,Mudanças climáticas,Outros,Quase ameaçado,África,1928
+Cavalo Selvagem,Caça ilegal,Perda de habitat,Vulnerável,Oceania,1926
+Golfinho,Caça ilegal,Mudanças climáticas,Crítico,Ásia,1943
+Tigre Branco,Perda de habitat,Outros,Vulnerável,Europa,1980
+Tigre de Bengala,Poluição,Perda de habitat,Em perigo,América do Sul,1979
+Lobo Cinzento,Caça ilegal,Outros,Quase ameaçado,África,1940
+Cavalo Selvagem,Caça ilegal,Perda de habitat,Crítico,América do Norte,1930
+Lobo Cinzento,Perda de habitat,Mudanças climáticas,Quase ameaçado,Ásia,2011
+Panda Gigante,Outros,Caça ilegal,Em perigo,África,1980
+Iguana Verde,Perda de habitat,Mudanças climáticas,Menos preocupante,Oceania,1938
+Lince,Outros,Caça ilegal,Menos preocupante,Europa,1965
+Rinoceronte Negro,Perda de habitat,Poluição,Quase ameaçado,América do Sul,1969
+Rinoceronte Negro,Caça ilegal,Caça ilegal,Em perigo,América do Sul,1968
+Macaco Prego,Outros,Caça ilegal,Em perigo,África,1999
+Tartaruga Marinha,Poluição,Perda de habitat,Em perigo,África,2023
+Macaco Prego,Outros,Mudanças climáticas,Menos preocupante,Oceania,2020
+Elefante,Mudanças climáticas,Outros,Crítico,Oceania,1976
+Gorila,Mudanças climáticas,Poluição,Crítico,América do Norte,1927
+Tubarão Branco,Outros,Mudanças climáticas,Menos preocupante,Oceania,1900
+Urso Polar,Poluição,Mudanças climáticas,Menos preocupante,América do Sul,1980
+Lince,Mudanças climáticas,Poluição,Crítico,América do Sul,2000
+Condor Californiano,Caça ilegal,Mudanças climáticas,Em perigo,Oceania,1935
+Tubarão Branco,Mudanças climáticas,Mudanças climáticas,Em perigo,Oceania,2000
+Lince,Perda de habitat,Perda de habitat,Vulnerável,América do Sul,1968
+Jacaré Americano,Caça ilegal,Perda de habitat,Em perigo,Oceania,1928
+Gorila,Perda de habitat,Outros,Em perigo,Oceania,1942
+Tartaruga Marinha,Poluição,Mudanças climáticas,Quase ameaçado,Oceania,1968
+Urso Polar,Poluição,Poluição,Quase ameaçado,Oceania,1979
+Tartaruga Marinha,Mudanças climáticas,Outros,Quase ameaçado,América do Sul,2020
+Urso Polar,Caça ilegal,Perda de habitat,Em perigo,América do Norte,1991
+Jacaré Americano,Mudanças climáticas,Caça ilegal,Menos preocupante,Oceania,2012
+Golfinho,Perda de habitat,Mudanças climáticas,Vulnerável,América do Norte,1968
+Panda Gigante,Mudanças climáticas,Caça ilegal,Vulnerável,América do Norte,1941
+Leão,Perda de habitat,Mudanças climáticas,Quase ameaçado,Ásia,1954
+Gorila,Caça ilegal,Outros,Crítico,Oceania,1961
+Tartaruga Marinha,Poluição,Perda de habitat,Menos preocupante,Europa,1996
+Rinoceronte Negro,Perda de habitat,Outros,Vulnerável,América do Sul,1932
+Orangotango,Poluição,Caça ilegal,Quase ameaçado,América do Norte,1929
+Macaco Prego,Outros,Mudanças climáticas,Menos preocupante,Europa,1976
+Jacaré Americano,Caça ilegal,Outros,Vulnerável,Europa,1993
+Tigre Branco,Poluição,Caça ilegal,Menos preocupante,Ásia,1901
+Tigre Branco,Poluição,Outros,Quase ameaçado,América do Norte,1958
+Cavalo Selvagem,Mudanças climáticas,Mudanças climáticas,Menos preocupante,Oceania,1968
+Lobo Cinzento,Caça ilegal,Mudanças climáticas,Quase ameaçado,Ásia,1901
+Leão,Poluição,Mudanças climáticas,Crítico,Ásia,2001
+Lobo Cinzento,Caça ilegal,Caça ilegal,Vulnerável,América do Norte,2005
+Golfinho,Mudanças climáticas,Poluição,Quase ameaçado,Oceania,1927
+Tigre de Bengala,Perda de habitat,Perda de habitat,Quase ameaçado,Oceania,1961
+Panda Gigante,Outros,Perda de habitat,Em perigo,América do Sul,1955
+Iguana Verde,Mudanças climáticas,Perda de habitat,Crítico,Europa,1903
+Macaco Prego,Mudanças climáticas,Outros,Em perigo,Europa,1941
+Águia Real,Poluição,Mudanças climáticas,Vulnerável,América do Sul,1991
+Urso Polar,Poluição,Outros,Crítico,Oceania,1923
+Panda Gigante,Perda de habitat,Caça ilegal,Vulnerável,Europa,2017
+Gorila,Caça ilegal,Caça ilegal,Quase ameaçado,Europa,1964
+Jacaré Americano,Poluição,Outros,Quase ameaçado,América do Sul,2007
+Jacaré Americano,Outros,Outros,Crítico,Oceania,1912
+Panda Gigante,Mudanças climáticas,Caça ilegal,Crítico,Ásia,1910
+Rinoceronte Negro,Mudanças climáticas,Mudanças climáticas,Em perigo,América do Norte,1949
+Tigre de Bengala,Outros,Caça ilegal,Crítico,Ásia,1969
+Elefante,Outros,Outros,Quase ameaçado,Ásia,1972
+Lince,Mudanças climáticas,Perda de habitat,Crítico,América do Norte,1931
+Águia Real,Outros,Perda de habitat,Vulnerável,África,1915
+Golfinho,Caça ilegal,Outros,Vulnerável,Ásia,1941
+Orangotango,Mudanças climáticas,Mudanças climáticas,Vulnerável,África,1983
+Urso Polar,Perda de habitat,Mudanças climáticas,Vulnerável,América do Sul,1909
+Rinoceronte Negro,Outros,Caça ilegal,Vulnerável,Ásia,1931
+Tigre de Bengala,Perda de habitat,Mudanças climáticas,Quase ameaçado,América do Sul,1920
+Águia Real,Mudanças climáticas,Perda de habitat,Menos preocupante,Ásia,1946
+Tigre de Bengala,Caça ilegal,Poluição,Em perigo,África,1991
+Rinoceronte Negro,Perda de habitat,Caça ilegal,Quase ameaçado,Europa,2024
+Orangotango,Caça ilegal,Mudanças climáticas,Em perigo,Oceania,1995
+Lince,Mudanças climáticas,Mudanças climáticas,Em perigo,África,1946
+Golfinho,Perda de habitat,Perda de habitat,Vulnerável,América do Sul,1933
+Cavalo Selvagem,Perda de habitat,Caça ilegal,Vulnerável,Europa,2000
+Jacaré Americano,Mudanças climáticas,Perda de habitat,Em perigo,Oceania,1914
+Iguana Verde,Outros,Perda de habitat,Vulnerável,Europa,1981
+Cavalo Selvagem,Outros,Perda de habitat,Crítico,África,2020
+Tigre Branco,Poluição,Mudanças climáticas,Menos preocupante,Oceania,2019
+Golfinho,Outros,Perda de habitat,Em perigo,África,2023
+Tubarão Branco,Perda de habitat,Caça ilegal,Vulnerável,Europa,2008
+Rinoceronte Negro,Mudanças climáticas,Caça ilegal,Vulnerável,Europa,1998
+Urso Polar,Outros,Perda de habitat,Menos preocupante,África,1903
+Golfinho,Perda de habitat,Poluição,Em perigo,Ásia,2021
+Rinoceronte Negro,Outros,Poluição,Quase ameaçado,América do Norte,1939
+Jacaré Americano,Perda de habitat,Mudanças climáticas,Menos preocupante,América do Norte,1956
+Macaco Prego,Mudanças climáticas,Outros,Em perigo,América do Sul,1950
+Urso Polar,Poluição,Caça ilegal,Vulnerável,Oceania,1929
+Panda Gigante,Perda de habitat,Caça ilegal,Em perigo,América do Norte,1933
+Elefante,Poluição,Perda de habitat,Vulnerável,América do Sul,1922
+Elefante,Poluição,Mudanças climáticas,Vulnerável,Europa,2011
+Condor Californiano,Perda de habitat,Perda de habitat,Vulnerável,África,1929
+Golfinho,Mudanças climáticas,Poluição,Crítico,Ásia,1965
+Golfinho,Mudanças climáticas,Outros,Quase ameaçado,Europa,1978
+Elefante,Mudanças climáticas,Mudanças climáticas,Vulnerável,América do Norte,1956
+Águia Real,Poluição,Outros,Crítico,América do Sul,1913
+Águia Real,Outros,Outros,Vulnerável,África,1964
+Tigre de Bengala,Mudanças climáticas,Mudanças climáticas,Menos preocupante,América do Sul,1972
+Iguana Verde,Outros,Caça ilegal,Vulnerável,América do Norte,1916
+Jacaré Americano,Poluição,Perda de habitat,Crítico,Ásia,1998
+Panda Gigante,Poluição,Poluição,Vulnerável,Oceania,1998
+Tigre Branco,Outros,Caça ilegal,Em perigo,Ásia,1975
+Tigre de Bengala,Mudanças climáticas,Caça ilegal,Em perigo,Europa,1970
+Lobo Cinzento,Perda de habitat,Mudanças climáticas,Em perigo,Europa,1986
+Cavalo Selvagem,Perda de habitat,Caça ilegal,Menos preocupante,África,1913
+Orangotango,Perda de habitat,Caça ilegal,Em perigo,África,1996
+Cavalo Selvagem,Caça ilegal,Mudanças climáticas,Quase ameaçado,Europa,1977
+Cavalo Selvagem,Caça ilegal,Outros,Menos preocupante,África,1987
+Tigre de Bengala,Caça ilegal,Outros,Crítico,América do Sul,1900
+Elefante,Mudanças climáticas,Perda de habitat,Menos preocupante,América do Sul,1987
+Elefante,Mudanças climáticas,Poluição,Vulnerável,América do Sul,1928
+Condor Californiano,Poluição,Perda de habitat,Em perigo,América do Sul,1933
+Lince,Perda de habitat,Caça ilegal,Quase ameaçado,África,2001
+Orangotango,Perda de habitat,Caça ilegal,Crítico,África,1934
+Tigre Branco,Outros,Caça ilegal,Crítico,Europa,1991
+Iguana Verde,Outros,Mudanças climáticas,Em perigo,África,1938
+Condor Californiano,Outros,Mudanças climáticas,Crítico,Ásia,2015
+Iguana Verde,Poluição,Outros,Vulnerável,Ásia,1922
+Urso Polar,Mudanças climáticas,Outros,Vulnerável,América do Sul,1932
+Águia Real,Poluição,Poluição,Menos preocupante,Ásia,1928
+Leão,Caça ilegal,Poluição,Crítico,Europa,1987
+Urso Polar,Caça ilegal,Caça ilegal,Vulnerável,Ásia,2008
+Rinoceronte Negro,Mudanças climáticas,Poluição,Menos preocupante,Ásia,1996
+Tartaruga Marinha,Poluição,Poluição,Quase ameaçado,Oceania,2016
+Tigre Branco,Caça ilegal,Caça ilegal,Quase ameaçado,América do Sul,2024
+Iguana Verde,Outros,Poluição,Em perigo,Ásia,1932
+Urso Polar,Caça ilegal,Outros,Em perigo,América do Norte,2015
+Golfinho,Perda de habitat,Caça ilegal,Quase ameaçado,Ásia,1924
+Iguana Verde,Poluição,Poluição,Menos preocupante,Ásia,2021
+Panda Gigante,Mudanças climáticas,Perda de habitat,Em perigo,Ásia,2017
+Orangotango,Caça ilegal,Poluição,Em perigo,África,1906
+Jacaré Americano,Perda de habitat,Perda de habitat,Quase ameaçado,América do Norte,1936
+Leão,Perda de habitat,Mudanças climáticas,Menos preocupante,Europa,1927
+Panda Gigante,Outros,Poluição,Vulnerável,Oceania,1901
+Iguana Verde,Outros,Poluição,Vulnerável,Oceania,2022
+Tartaruga Marinha,Mudanças climáticas,Poluição,Menos preocupante,Ásia,1932
+Orangotango,Outros,Poluição,Menos preocupante,Europa,2011
+Tubarão Branco,Caça ilegal,Poluição,Quase ameaçado,Oceania,1911
+Cavalo Selvagem,Mudanças climáticas,Outros,Crítico,Ásia,1946
+Golfinho,Poluição,Mudanças climáticas,Crítico,Oceania,1913
+Orangotango,Outros,Caça ilegal,Vulnerável,Europa,1993
+Leão,Mudanças climáticas,Outros,Quase ameaçado,América do Norte,1940
+Orangotango,Outros,Mudanças climáticas,Em perigo,América do Sul,1918
+Rinoceronte Negro,Poluição,Caça ilegal,Menos preocupante,África,1958
+Jacaré Americano,Perda de habitat,Caça ilegal,Crítico,Oceania,1993
+Cavalo Selvagem,Caça ilegal,Poluição,Em perigo,América do Sul,1973
+Leão,Outros,Perda de habitat,Menos preocupante,Ásia,1979
+Rinoceronte Negro,Mudanças climáticas,Poluição,Crítico,América do Norte,1938
+Iguana Verde,Outros,Caça ilegal,Menos preocupante,África,1988
+Lobo Cinzento,Perda de habitat,Poluição,Menos preocupante,África,1915
+Panda Gigante,Outros,Outros,Quase ameaçado,América do Sul,1906
+Lobo Cinzento,Poluição,Perda de habitat,Crítico,Ásia,1923
+Gorila,Mudanças climáticas,Outros,Vulnerável,África,1917
+Gorila,Poluição,Poluição,Crítico,Ásia,1904
+Leão,Mudanças climáticas,Perda de habitat,Em perigo,América do Norte,1935
+Orangotango,Caça ilegal,Perda de habitat,Menos preocupante,América do Norte,2017
+Lince,Caça ilegal,Poluição,Em perigo,América do Norte,1988
+Rinoceronte Negro,Perda de habitat,Poluição,Quase ameaçado,África,2007
+Iguana Verde,Poluição,Mudanças climáticas,Vulnerável,Ásia,1977
+Tigre de Bengala,Outros,Caça ilegal,Menos preocupante,América do Norte,1947
+Orangotango,Caça ilegal,Caça ilegal,Em perigo,América do Sul,1968
+Tigre Branco,Mudanças climáticas,Caça ilegal,Crítico,Ásia,1929
+Leão,Mudanças climáticas,Caça ilegal,Menos preocupante,Oceania,2020
+Tubarão Branco,Poluição,Mudanças climáticas,Quase ameaçado,América do Norte,1923
+Cavalo Selvagem,Perda de habitat,Outros,Quase ameaçado,América do Norte,1966
+Panda Gigante,Mudanças climáticas,Poluição,Menos preocupante,Oceania,1996
+Rinoceronte Negro,Poluição,Mudanças climáticas,Vulnerável,Oceania,1927
+Orangotango,Mudanças climáticas,Outros,Menos preocupante,América do Norte,1948
+Iguana Verde,Caça ilegal,Poluição,Menos preocupante,América do Sul,1907
+Tartaruga Marinha,Caça ilegal,Caça ilegal,Vulnerável,Oceania,1980
+Panda Gigante,Poluição,Perda de habitat,Menos preocupante,África,1917
+Lince,Caça ilegal,Poluição,Quase ameaçado,Ásia,2001
+Cavalo Selvagem,Poluição,Caça ilegal,Vulnerável,Ásia,2020
+Condor Californiano,Mudanças climáticas,Mudanças climáticas,Vulnerável,Oceania,1913
+Iguana Verde,Mudanças climáticas,Perda de habitat,Vulnerável,Ásia,1996
+Iguana Verde,Caça ilegal,Outros,Em perigo,América do Sul,1906
+Tartaruga Marinha,Mudanças climáticas,Poluição,Em perigo,Oceania,1964
+Tartaruga Marinha,Poluição,Outros,Crítico,América do Norte,1905
+Leão,Caça ilegal,Caça ilegal,Quase ameaçado,Europa,1977
+Urso Polar,Poluição,Perda de habitat,Menos preocupante,Oceania,1926
+Orangotango,Caça ilegal,Perda de habitat,Vulnerável,Oceania,1992
+Gorila,Outros,Poluição,Em perigo,Oceania,1923
+Orangotango,Poluição,Poluição,Crítico,Europa,1945
+Leão,Outros,Perda de habitat,Quase ameaçado,América do Norte,1982
+Panda Gigante,Poluição,Outros,Quase ameaçado,Europa,1906
+Águia Real,Caça ilegal,Outros,Vulnerável,Ásia,1901
+Tubarão Branco,Caça ilegal,Perda de habitat,Em perigo,Oceania,1921
+Águia Real,Poluição,Caça ilegal,Menos preocupante,Oceania,1959
+Águia Real,Poluição,Caça ilegal,Crítico,Ásia,1960
+Iguana Verde,Outros,Outros,Em perigo,Ásia,1993
+Lobo Cinzento,Caça ilegal,Outros,Quase ameaçado,América do Norte,1950
+Rinoceronte Negro,Caça ilegal,Mudanças climáticas,Em perigo,América do Norte,1905
+Lince,Caça ilegal,Mudanças climáticas,Vulnerável,África,1941
+Orangotango,Caça ilegal,Perda de habitat,Menos preocupante,Oceania,1948
+Cavalo Selvagem,Caça ilegal,Poluição,Quase ameaçado,África,2020
+Jacaré Americano,Perda de habitat,Perda de habitat,Vulnerável,África,2003
+Jacaré Americano,Poluição,Perda de habitat,Vulnerável,Europa,1996
+Cavalo Selvagem,Perda de habitat,Poluição,Vulnerável,América do Sul,1949
+Panda Gigante,Poluição,Caça ilegal,Menos preocupante,América do Sul,2020
+Condor Californiano,Mudanças climáticas,Poluição,Menos preocupante,Oceania,1989
+Orangotango,Caça ilegal,Caça ilegal,Menos preocupante,África,1991
+Tartaruga Marinha,Poluição,Poluição,Em perigo,Europa,1910
+Tigre Branco,Outros,Caça ilegal,Quase ameaçado,Ásia,1968
+Gorila,Outros,Mudanças climáticas,Quase ameaçado,América do Sul,1905
+Iguana Verde,Mudanças climáticas,Perda de habitat,Vulnerável,América do Norte,1935
+Tartaruga Marinha,Poluição,Outros,Menos preocupante,Europa,1989
+Elefante,Poluição,Mudanças climáticas,Menos preocupante,Ásia,1987
+Elefante,Perda de habitat,Mudanças climáticas,Quase ameaçado,África,1998
+Golfinho,Outros,Outros,Crítico,Oceania,2019
+Tigre Branco,Outros,Outros,Menos preocupante,Europa,1911
+Cavalo Selvagem,Poluição,Caça ilegal,Menos preocupante,África,1965
+Tigre Branco,Poluição,Mudanças climáticas,Vulnerável,África,1953
+Rinoceronte Negro,Caça ilegal,Poluição,Menos preocupante,Ásia,1972
+Panda Gigante,Caça ilegal,Mudanças climáticas,Menos preocupante,Ásia,1919
+Águia Real,Perda de habitat,Poluição,Quase ameaçado,América do Sul,1920
+Cavalo Selvagem,Poluição,Caça ilegal,Vulnerável,América do Norte,2017
+Elefante,Caça ilegal,Outros,Em perigo,América do Sul,1954
+Gorila,Poluição,Poluição,Quase ameaçado,América do Norte,1988
+Tubarão Branco,Mudanças climáticas,Perda de habitat,Menos preocupante,África,1978
+Tigre de Bengala,Perda de habitat,Mudanças climáticas,Menos preocupante,Europa,1939
+Leão,Poluição,Poluição,Em perigo,América do Sul,1969
+Gorila,Poluição,Mudanças climáticas,Crítico,América do Sul,1919
+Águia Real,Outros,Caça ilegal,Vulnerável,Europa,1974
+Macaco Prego,Poluição,Mudanças climáticas,Crítico,América do Norte,1968
+Tartaruga Marinha,Mudanças climáticas,Outros,Crítico,Europa,1988
+Águia Real,Caça ilegal,Perda de habitat,Em perigo,Ásia,1995
+Elefante,Poluição,Outros,Vulnerável,América do Sul,1968
+Tigre de Bengala,Perda de habitat,Outros,Crítico,Ásia,1984
+Tartaruga Marinha,Outros,Poluição,Menos preocupante,Ásia,1983
+Tubarão Branco,Caça ilegal,Perda de habitat,Crítico,América do Sul,1974
+Leão,Caça ilegal,Mudanças climáticas,Quase ameaçado,Oceania,1908
+Iguana Verde,Poluição,Outros,Menos preocupante,Europa,1935
+Leão,Poluição,Caça ilegal,Crítico,América do Sul,1998
+Orangotango,Mudanças climáticas,Poluição,Vulnerável,Europa,1921
+Lince,Outros,Mudanças climáticas,Quase ameaçado,América do Sul,1927
+Macaco Prego,Caça ilegal,Outros,Crítico,África,1956
+Urso Polar,Poluição,Perda de habitat,Em perigo,África,2001
+Lobo Cinzento,Mudanças climáticas,Caça ilegal,Crítico,América do Sul,2012
+Macaco Prego,Mudanças climáticas,Caça ilegal,Menos preocupante,Ásia,1977
+Macaco Prego,Perda de habitat,Mudanças climáticas,Crítico,África,2017
+Macaco Prego,Caça ilegal,Caça ilegal,Vulnerável,América do Sul,1970
+Condor Californiano,Caça ilegal,Perda de habitat,Em perigo,América do Norte,1922
+Elefante,Perda de habitat,Mudanças climáticas,Quase ameaçado,América do Sul,1994
+Tigre Branco,Outros,Mudanças climáticas,Quase ameaçado,Europa,1960
+Tartaruga Marinha,Outros,Caça ilegal,Vulnerável,América do Sul,1946
+Urso Polar,Perda de habitat,Perda de habitat,Quase ameaçado,América do Norte,1990
+Tubarão Branco,Caça ilegal,Perda de habitat,Menos preocupante,América do Sul,1936
+Tubarão Branco,Caça ilegal,Poluição,Em perigo,América do Sul,1996
+Iguana Verde,Perda de habitat,Perda de habitat,Em perigo,Ásia,2007
+Rinoceronte Negro,Perda de habitat,Mudanças climáticas,Menos preocupante,Ásia,1984
+Águia Real,Poluição,Poluição,Vulnerável,Europa,1964
+Tubarão Branco,Poluição,Outros,Menos preocupante,Oceania,1913
+Gorila,Outros,Outros,Em perigo,Oceania,1966
+Águia Real,Poluição,Poluição,Vulnerável,América do Sul,1924
+Tartaruga Marinha,Caça ilegal,Outros,Crítico,Europa,2000
+Lobo Cinzento,Caça ilegal,Caça ilegal,Quase ameaçado,Oceania,2024
+Condor Californiano,Poluição,Caça ilegal,Em perigo,Ásia,1999
+Tigre Branco,Caça ilegal,Outros,Menos preocupante,América do Sul,1971
+Tubarão Branco,Caça ilegal,Outros,Em perigo,Europa,1990
+Tubarão Branco,Outros,Mudanças climáticas,Menos preocupante,Europa,1935
+Orangotango,Poluição,Outros,Crítico,África,1956
+Orangotango,Mudanças climáticas,Caça ilegal,Vulnerável,América do Sul,1966
+Lobo Cinzento,Caça ilegal,Outros,Em perigo,América do Norte,1911
+Águia Real,Perda de habitat,Perda de habitat,Menos preocupante,África,1910
+Tigre Branco,Perda de habitat,Outros,Vulnerável,Oceania,2009
+Leão,Outros,Mudanças climáticas,Em perigo,Ásia,2016
+Tigre de Bengala,Poluição,Mudanças climáticas,Em perigo,Europa,1939
+Jacaré Americano,Mudanças climáticas,Perda de habitat,Menos preocupante,Ásia,1948
+Leão,Mudanças climáticas,Outros,Quase ameaçado,África,1922
+Águia Real,Caça ilegal,Outros,Menos preocupante,América do Sul,1998
+Águia Real,Outros,Outros,Em perigo,África,1998
+Águia Real,Mudanças climáticas,Outros,Em perigo,América do Norte,2021
+Jacaré Americano,Outros,Outros,Crítico,Oceania,1934
+Jacaré Americano,Poluição,Outros,Quase ameaçado,Ásia,1974
+Leão,Poluição,Poluição,Quase ameaçado,América do Norte,1982
+Gorila,Caça ilegal,Mudanças climáticas,Quase ameaçado,Ásia,1966
+Macaco Prego,Poluição,Mudanças climáticas,Vulnerável,Ásia,2010
+Leão,Mudanças climáticas,Outros,Vulnerável,América do Sul,1907
+Tartaruga Marinha,Outros,Mudanças climáticas,Menos preocupante,África,1945
+Cavalo Selvagem,Caça ilegal,Outros,Em perigo,África,1984
+Urso Polar,Poluição,Poluição,Crítico,Oceania,2024
+Rinoceronte Negro,Caça ilegal,Poluição,Crítico,América do Sul,1964
+Águia Real,Caça ilegal,Outros,Crítico,América do Sul,2016
+Tubarão Branco,Poluição,Outros,Crítico,América do Norte,2017
+Gorila,Mudanças climáticas,Outros,Menos preocupante,América do Sul,1943
+Condor Californiano,Mudanças climáticas,Caça ilegal,Crítico,África,1957
+Rinoceronte Negro,Perda de habitat,Outros,Em perigo,América do Norte,1923
+Jacaré Americano,Outros,Perda de habitat,Vulnerável,Oceania,2022
+Tubarão Branco,Poluição,Mudanças climáticas,Menos preocupante,Ásia,1930
+Rinoceronte Negro,Outros,Caça ilegal,Em perigo,Europa,1907
+Golfinho,Perda de habitat,Perda de habitat,Em perigo,América do Norte,1900
+Elefante,Mudanças climáticas,Outros,Em perigo,África,1927
+Águia Real,Mudanças climáticas,Poluição,Quase ameaçado,América do Sul,1934
+Panda Gigante,Outros,Caça ilegal,Vulnerável,América do Sul,1915
+Lobo Cinzento,Caça ilegal,Caça ilegal,Em perigo,África,1971
+Macaco Prego,Outros,Poluição,Menos preocupante,Ásia,1958
+Gorila,Mudanças climáticas,Caça ilegal,Vulnerável,Europa,2021
+Lince,Caça ilegal,Caça ilegal,Em perigo,América do Norte,2001
+Gorila,Poluição,Caça ilegal,Menos preocupante,Europa,2021
+Orangotango,Outros,Outros,Crítico,Ásia,2011
+Orangotango,Caça ilegal,Outros,Vulnerável,Europa,1988
+Tubarão Branco,Perda de habitat,Mudanças climáticas,Vulnerável,América do Sul,1922
+Rinoceronte Negro,Poluição,Outros,Vulnerável,América do Sul,1967
+Panda Gigante,Mudanças climáticas,Poluição,Em perigo,América do Sul,1997
+Orangotango,Perda de habitat,Outros,Crítico,América do Norte,2006
+Elefante,Mudanças climáticas,Poluição,Menos preocupante,América do Norte,2020
+Tigre Branco,Outros,Perda de habitat,Em perigo,Oceania,2016
+Gorila,Perda de habitat,Mudanças climáticas,Vulnerável,Europa,2021
+Tigre de Bengala,Mudanças climáticas,Perda de habitat,Menos preocupante,África,1993
+Leão,Outros,Perda de habitat,Quase ameaçado,África,1968
+Condor Californiano,Outros,Mudanças climáticas,Vulnerável,América do Sul,2019
+Iguana Verde,Perda de habitat,Outros,Vulnerável,América do Norte,1979
+Condor Californiano,Caça ilegal,Outros,Quase ameaçado,Oceania,1976
+Orangotango,Poluição,Mudanças climáticas,Vulnerável,Europa,1974
+Tigre Branco,Outros,Caça ilegal,Em perigo,América do Norte,1984
+Gorila,Outros,Mudanças climáticas,Crítico,América do Sul,1907
+Condor Californiano,Poluição,Mudanças climáticas,Crítico,Oceania,1974
+Lobo Cinzento,Outros,Mudanças climáticas,Vulnerável,América do Sul,1920
+Panda Gigante,Poluição,Caça ilegal,Em perigo,Ásia,1919
+Lince,Caça ilegal,Perda de habitat,Em perigo,América do Norte,2022
+Golfinho,Mudanças climáticas,Poluição,Em perigo,América do Norte,1980
+Golfinho,Caça ilegal,Mudanças climáticas,Em perigo,Oceania,2019
+Elefante,Perda de habitat,Caça ilegal,Menos preocupante,Oceania,1937
+Orangotango,Perda de habitat,Poluição,Vulnerável,Ásia,2021
+Tigre Branco,Perda de habitat,Poluição,Crítico,Ásia,2001
+Condor Californiano,Caça ilegal,Outros,Quase ameaçado,Europa,2001
+Tigre Branco,Perda de habitat,Poluição,Quase ameaçado,Oceania,1945
+Golfinho,Poluição,Mudanças climáticas,Quase ameaçado,América do Sul,1919
+Elefante,Caça ilegal,Mudanças climáticas,Em perigo,Europa,1923
+Tartaruga Marinha,Caça ilegal,Poluição,Em perigo,América do Sul,1969
+Leão,Perda de habitat,Perda de habitat,Crítico,África,1975
+Cavalo Selvagem,Mudanças climáticas,Mudanças climáticas,Menos preocupante,Ásia,1951
+Condor Californiano,Caça ilegal,Caça ilegal,Quase ameaçado,África,2016
+Tartaruga Marinha,Caça ilegal,Perda de habitat,Em perigo,América do Sul,1977
+Macaco Prego,Mudanças climáticas,Perda de habitat,Menos preocupante,América do Norte,1950
+Tigre de Bengala,Caça ilegal,Poluição,Em perigo,Oceania,1953
+Águia Real,Poluição,Mudanças climáticas,Em perigo,Ásia,1993
+Gorila,Outros,Outros,Menos preocupante,América do Sul,1920
+Elefante,Caça ilegal,Outros,Vulnerável,Europa,1985
+Lobo Cinzento,Poluição,Perda de habitat,Quase ameaçado,Europa,1973
+Leão,Poluição,Poluição,Menos preocupante,América do Sul,2001
+Orangotango,Mudanças climáticas,Mudanças climáticas,Crítico,América do Norte,1953
+Macaco Prego,Poluição,Outros,Menos preocupante,Europa,2007
+Golfinho,Mudanças climáticas,Poluição,Menos preocupante,América do Sul,1923
+Tigre de Bengala,Perda de habitat,Poluição,Crítico,América do Norte,1909
+Gorila,Poluição,Outros,Vulnerável,América do Sul,1971
+Cavalo Selvagem,Outros,Mudanças climáticas,Quase ameaçado,Europa,2004
+Panda Gigante,Mudanças climáticas,Poluição,Vulnerável,América do Norte,1974
+Orangotango,Outros,Poluição,Em perigo,Europa,2004
+Gorila,Mudanças climáticas,Outros,Crítico,Ásia,1997
+Macaco Prego,Mudanças climáticas,Perda de habitat,Quase ameaçado,América do Sul,1997
+Rinoceronte Negro,Caça ilegal,Mudanças climáticas,Vulnerável,América do Sul,1967
+Águia Real,Mudanças climáticas,Outros,Menos preocupante,América do Norte,2001
+Panda Gigante,Outros,Mudanças climáticas,Crítico,Ásia,1940
+Tigre de Bengala,Perda de habitat,Perda de habitat,Quase ameaçado,América do Sul,1963
+Elefante,Outros,Perda de habitat,Crítico,África,1967
+Leão,Caça ilegal,Outros,Menos preocupante,América do Norte,1990
+Jacaré Americano,Perda de habitat,Mudanças climáticas,Menos preocupante,Europa,2001
+Águia Real,Mudanças climáticas,Caça ilegal,Crítico,Europa,1981
+Lince,Perda de habitat,Mudanças climáticas,Crítico,América do Sul,1932
+Golfinho,Poluição,Caça ilegal,Quase ameaçado,Oceania,1919
+Golfinho,Outros,Caça ilegal,Quase ameaçado,América do Sul,2011
+Leão,Perda de habitat,Outros,Vulnerável,Oceania,1924
+Lobo Cinzento,Outros,Perda de habitat,Crítico,Europa,1923
+Rinoceronte Negro,Caça ilegal,Mudanças climáticas,Quase ameaçado,Oceania,1980
+Jacaré Americano,Perda de habitat,Outros,Vulnerável,América do Sul,2008
+Rinoceronte Negro,Mudanças climáticas,Poluição,Em perigo,Europa,1928
+Tigre Branco,Poluição,Caça ilegal,Vulnerável,América do Norte,1907
+Lobo Cinzento,Mudanças climáticas,Mudanças climáticas,Vulnerável,América do Norte,1963
+Urso Polar,Poluição,Poluição,Menos preocupante,América do Norte,1907
+Tigre de Bengala,Perda de habitat,Outros,Quase ameaçado,Europa,1931
+Iguana Verde,Perda de habitat,Caça ilegal,Crítico,América do Sul,1947
+Lobo Cinzento,Mudanças climáticas,Outros,Crítico,Oceania,1926
+Tubarão Branco,Poluição,Poluição,Crítico,América do Norte,2004
+Leão,Poluição,Mudanças climáticas,Menos preocupante,África,1999
+Panda Gigante,Outros,Poluição,Menos preocupante,Europa,1957
+Leão,Outros,Perda de habitat,Menos preocupante,América do Norte,1968
+Iguana Verde,Mudanças climáticas,Perda de habitat,Vulnerável,África,1948
+Leão,Poluição,Caça ilegal,Menos preocupante,Europa,1930
+Urso Polar,Perda de habitat,Caça ilegal,Crítico,Ásia,1990
+Águia Real,Outros,Perda de habitat,Vulnerável,América do Norte,1942
+Elefante,Outros,Mudanças climáticas,Crítico,Europa,1920
+Golfinho,Mudanças climáticas,Caça ilegal,Quase ameaçado,América do Norte,1987
+Cavalo Selvagem,Mudanças climáticas,Mudanças climáticas,Crítico,Europa,1995
+Elefante,Mudanças climáticas,Outros,Em perigo,América do Sul,2020
+Leão,Caça ilegal,Outros,Crítico,Ásia,1936
+Lobo Cinzento,Mudanças climáticas,Caça ilegal,Quase ameaçado,América do Norte,2008
+Jacaré Americano,Caça ilegal,Outros,Crítico,América do Norte,1916
+Orangotango,Mudanças climáticas,Perda de habitat,Em perigo,África,1946
+Tubarão Branco,Caça ilegal,Perda de habitat,Menos preocupante,Oceania,2020
+Tubarão Branco,Caça ilegal,Perda de habitat,Em perigo,África,1993
+Tartaruga Marinha,Caça ilegal,Perda de habitat,Crítico,América do Sul,1976
+Gorila,Outros,Poluição,Em perigo,África,1989
+Tubarão Branco,Mudanças climáticas,Caça ilegal,Quase ameaçado,Oceania,1916
+Orangotango,Perda de habitat,Mudanças climáticas,Crítico,Ásia,1921
+Lince,Mudanças climáticas,Poluição,Quase ameaçado,América do Norte,1985
+Tubarão Branco,Poluição,Mudanças climáticas,Em perigo,Oceania,2006
+Orangotango,Poluição,Outros,Vulnerável,Europa,1929
+Golfinho,Caça ilegal,Outros,Em perigo,África,1945
+Orangotango,Caça ilegal,Caça ilegal,Quase ameaçado,América do Sul,1905
+Cavalo Selvagem,Poluição,Caça ilegal,Quase ameaçado,América do Sul,1911
+Tigre de Bengala,Mudanças climáticas,Caça ilegal,Quase ameaçado,América do Norte,1920
+Tigre Branco,Caça ilegal,Poluição,Menos preocupante,América do Sul,1941
+Tigre Branco,Perda de habitat,Outros,Em perigo,América do Norte,2008
+Jacaré Americano,Outros,Caça ilegal,Vulnerável,África,1945
+Lobo Cinzento,Mudanças climáticas,Mudanças climáticas,Vulnerável,África,1965
+Orangotango,Perda de habitat,Poluição,Em perigo,África,1970
+Golfinho,Outros,Poluição,Crítico,Oceania,1920
+Gorila,Perda de habitat,Poluição,Crítico,Ásia,1953
+Lobo Cinzento,Mudanças climáticas,Poluição,Quase ameaçado,Ásia,1988
+Lince,Mudanças climáticas,Perda de habitat,Quase ameaçado,Oceania,1942
+Rinoceronte Negro,Caça ilegal,Mudanças climáticas,Menos preocupante,Europa,1988
+Elefante,Outros,Caça ilegal,Menos preocupante,América do Sul,2007
+Lince,Poluição,Perda de habitat,Crítico,Europa,1944
+Lince,Caça ilegal,Caça ilegal,Crítico,Europa,1948
+Panda Gigante,Mudanças climáticas,Mudanças climáticas,Quase ameaçado,África,1900
+Iguana Verde,Perda de habitat,Caça ilegal,Menos preocupante,Ásia,1969
+Urso Polar,Mudanças climáticas,Mudanças climáticas,Quase ameaçado,Europa,1985
+Elefante,Mudanças climáticas,Mudanças climáticas,Vulnerável,Ásia,1983
+Condor Californiano,Mudanças climáticas,Outros,Crítico,África,1950
+Águia Real,Perda de habitat,Poluição,Quase ameaçado,Ásia,2005
+Urso Polar,Perda de habitat,Poluição,Crítico,Ásia,1955
+Águia Real,Poluição,Caça ilegal,Menos preocupante,Europa,1968
+Urso Polar,Perda de habitat,Perda de habitat,Menos preocupante,América do Norte,1953
+Lince,Poluição,Perda de habitat,Crítico,Ásia,1966
+Rinoceronte Negro,Mudanças climáticas,Perda de habitat,Crítico,Ásia,1925
+Tigre de Bengala,Perda de habitat,Perda de habitat,Em perigo,Oceania,1977
+Gorila,Outros,Mudanças climáticas,Menos preocupante,África,1908
+Lobo Cinzento,Caça ilegal,Perda de habitat,Quase ameaçado,Ásia,2012
+Condor Californiano,Perda de habitat,Mudanças climáticas,Quase ameaçado,Oceania,2000
+Lobo Cinzento,Perda de habitat,Mudanças climáticas,Em perigo,América do Norte,1987
+Rinoceronte Negro,Outros,Caça ilegal,Quase ameaçado,América do Sul,1962
+Panda Gigante,Caça ilegal,Caça ilegal,Em perigo,Europa,1923
+Tartaruga Marinha,Outros,Mudanças climáticas,Vulnerável,América do Sul,1961
+Macaco Prego,Outros,Outros,Menos preocupante,Oceania,2009
+Tubarão Branco,Caça ilegal,Caça ilegal,Vulnerável,África,1905
+Tigre de Bengala,Outros,Mudanças climáticas,Em perigo,Ásia,2004
+Tigre de Bengala,Perda de habitat,Perda de habitat,Em perigo,Ásia,1906
+Urso Polar,Mudanças climáticas,Caça ilegal,Quase ameaçado,Europa,1909
+Orangotango,Poluição,Outros,Menos preocupante,Europa,2024
+Urso Polar,Caça ilegal,Perda de habitat,Menos preocupante,América do Norte,1989
+Águia Real,Outros,Outros,Vulnerável,Europa,1941
+Leão,Outros,Caça ilegal,Crítico,Oceania,1936
+Tartaruga Marinha,Mudanças climáticas,Mudanças climáticas,Menos preocupante,América do Norte,1969
+Tigre de Bengala,Outros,Caça ilegal,Menos preocupante,Europa,1957
+Macaco Prego,Outros,Outros,Crítico,Europa,2020
+Cavalo Selvagem,Caça ilegal,Outros,Vulnerável,Ásia,1908
+Jacaré Americano,Perda de habitat,Outros,Em perigo,Ásia,1963
+Leão,Mudanças climáticas,Outros,Em perigo,Oceania,1945
+Lobo Cinzento,Poluição,Perda de habitat,Menos preocupante,Ásia,2017
+Urso Polar,Poluição,Caça ilegal,Em perigo,Oceania,2009
+Rinoceronte Negro,Mudanças climáticas,Mudanças climáticas,Em perigo,Ásia,1986
+Rinoceronte Negro,Mudanças climáticas,Perda de habitat,Vulnerável,Europa,2004
+Lobo Cinzento,Mudanças climáticas,Caça ilegal,Quase ameaçado,Europa,1966
+Lobo Cinzento,Perda de habitat,Poluição,Em perigo,África,1949
+Águia Real,Perda de habitat,Poluição,Vulnerável,América do Norte,1964
+Gorila,Mudanças climáticas,Perda de habitat,Quase ameaçado,Ásia,1962
+Iguana Verde,Mudanças climáticas,Poluição,Vulnerável,Ásia,1992
+Tartaruga Marinha,Perda de habitat,Outros,Menos preocupante,Ásia,1937
+Orangotango,Caça ilegal,Outros,Vulnerável,Europa,1953
+Elefante,Mudanças climáticas,Poluição,Em perigo,Oceania,1948
+Condor Californiano,Perda de habitat,Outros,Quase ameaçado,Ásia,1906
+Lince,Outros,Caça ilegal,Em perigo,Oceania,2017
+Orangotango,Outros,Caça ilegal,Crítico,Europa,2022
+Tigre de Bengala,Perda de habitat,Caça ilegal,Em perigo,Oceania,1974
+Tigre Branco,Caça ilegal,Outros,Vulnerável,Oceania,1990
+Tartaruga Marinha,Perda de habitat,Mudanças climáticas,Menos preocupante,América do Norte,1931
+Macaco Prego,Outros,Perda de habitat,Crítico,América do Norte,1931
+Rinoceronte Negro,Perda de habitat,Perda de habitat,Crítico,América do Sul,1920
+Orangotango,Caça ilegal,Mudanças climáticas,Quase ameaçado,África,1935
+Gorila,Caça ilegal,Mudanças climáticas,Menos preocupante,América do Norte,1949
+Urso Polar,Mudanças climáticas,Caça ilegal,Em perigo,Ásia,1938
+Orangotango,Mudanças climáticas,Outros,Crítico,América do Norte,1916
+Rinoceronte Negro,Caça ilegal,Poluição,Em perigo,América do Norte,2022
+Tartaruga Marinha,Mudanças climáticas,Mudanças climáticas,Vulnerável,América do Sul,1905
+Jacaré Americano,Caça ilegal,Perda de habitat,Menos preocupante,África,1985
+Macaco Prego,Perda de habitat,Caça ilegal,Menos preocupante,Oceania,1990
+Golfinho,Mudanças climáticas,Poluição,Quase ameaçado,África,1996
+Tubarão Branco,Outros,Caça ilegal,Crítico,América do Norte,1944
+Golfinho,Outros,Caça ilegal,Crítico,África,1987
+Iguana Verde,Poluição,Mudanças climáticas,Vulnerável,América do Norte,2000
+Tigre Branco,Caça ilegal,Mudanças climáticas,Menos preocupante,Oceania,1957
+Tigre Branco,Perda de habitat,Outros,Vulnerável,Oceania,1936
+Tigre Branco,Perda de habitat,Perda de habitat,Menos preocupante,Europa,1941
+Tubarão Branco,Mudanças climáticas,Outros,Crítico,Ásia,1963
+Rinoceronte Negro,Caça ilegal,Caça ilegal,Em perigo,África,1957
+Urso Polar,Outros,Poluição,Menos preocupante,África,1902
+Tigre Branco,Poluição,Poluição,Vulnerável,América do Sul,1919
+Condor Californiano,Perda de habitat,Outros,Vulnerável,Europa,1948
+Elefante,Poluição,Perda de habitat,Vulnerável,Ásia,1945
+Lince,Caça ilegal,Poluição,Quase ameaçado,América do Sul,1932
+Jacaré Americano,Outros,Poluição,Em perigo,Ásia,1991
+Lobo Cinzento,Mudanças climáticas,Poluição,Quase ameaçado,América do Sul,1951
+Gorila,Caça ilegal,Caça ilegal,Menos preocupante,Oceania,2004
+Tigre Branco,Caça ilegal,Mudanças climáticas,Quase ameaçado,América do Sul,1967
+Lobo Cinzento,Perda de habitat,Outros,Em perigo,Europa,1913
+Tubarão Branco,Poluição,Perda de habitat,Crítico,América do Sul,2004
+Urso Polar,Mudanças climáticas,Outros,Em perigo,Oceania,1984
+Golfinho,Caça ilegal,Caça ilegal,Em perigo,África,1980
+Jacaré Americano,Outros,Poluição,Menos preocupante,Oceania,1942
+Lince,Caça ilegal,Poluição,Em perigo,América do Sul,1931
+Águia Real,Perda de habitat,Perda de habitat,Quase ameaçado,Oceania,2004
+Lince,Caça ilegal,Outros,Crítico,América do Norte,2005
+Rinoceronte Negro,Mudanças climáticas,Mudanças climáticas,Em perigo,Ásia,1923
+Gorila,Perda de habitat,Outros,Quase ameaçado,África,1919
+Orangotango,Perda de habitat,Caça ilegal,Quase ameaçado,América do Sul,1931
+Lobo Cinzento,Poluição,Perda de habitat,Menos preocupante,Oceania,1974
+Tigre Branco,Mudanças climáticas,Poluição,Vulnerável,Europa,1955
+Lobo Cinzento,Perda de habitat,Poluição,Em perigo,África,1958
+Lobo Cinzento,Perda de habitat,Perda de habitat,Quase ameaçado,Oceania,1931
+Lince,Perda de habitat,Perda de habitat,Menos preocupante,Ásia,1987
+Cavalo Selvagem,Poluição,Poluição,Quase ameaçado,América do Norte,1947
+Macaco Prego,Outros,Outros,Crítico,Europa,1916
+Iguana Verde,Perda de habitat,Poluição,Crítico,Ásia,1930
+Rinoceronte Negro,Mudanças climáticas,Perda de habitat,Quase ameaçado,Oceania,1919
+Lince,Mudanças climáticas,Mudanças climáticas,Quase ameaçado,Europa,1913
+Rinoceronte Negro,Mudanças climáticas,Outros,Quase ameaçado,Europa,1927
+Golfinho,Outros,Perda de habitat,Quase ameaçado,Europa,1988
+Rinoceronte Negro,Outros,Perda de habitat,Menos preocupante,Oceania,1972
+Condor Californiano,Outros,Mudanças climáticas,Em perigo,Oceania,1985
+Lince,Mudanças climáticas,Mudanças climáticas,Menos preocupante,Oceania,1923
+Gorila,Mudanças climáticas,Mudanças climáticas,Menos preocupante,Ásia,2002
+Urso Polar,Perda de habitat,Poluição,Menos preocupante,Europa,1990
+Gorila,Poluição,Outros,Vulnerável,América do Sul,1920
+Macaco Prego,Mudanças climáticas,Mudanças climáticas,Em perigo,América do Sul,1931
+Águia Real,Poluição,Outros,Quase ameaçado,Oceania,2006
+Gorila,Outros,Mudanças climáticas,Em perigo,Europa,1922
+Tigre de Bengala,Outros,Poluição,Quase ameaçado,África,2019
+Orangotango,Outros,Perda de habitat,Crítico,Europa,1984
+Iguana Verde,Outros,Outros,Crítico,América do Sul,1990
+Tigre Branco,Poluição,Mudanças climáticas,Crítico,Ásia,1922
+Elefante,Poluição,Poluição,Menos preocupante,África,1974
+Orangotango,Mudanças climáticas,Perda de habitat,Menos preocupante,América do Sul,1937
+Golfinho,Mudanças climáticas,Poluição,Quase ameaçado,América do Norte,1992
+Águia Real,Outros,Caça ilegal,Crítico,Oceania,1989
+Elefante,Outros,Caça ilegal,Quase ameaçado,Ásia,2008
+Tartaruga Marinha,Mudanças climáticas,Poluição,Menos preocupante,Oceania,1955
+Tubarão Branco,Outros,Poluição,Menos preocupante,América do Sul,1996
+Iguana Verde,Perda de habitat,Outros,Crítico,América do Sul,1931
+Rinoceronte Negro,Caça ilegal,Poluição,Crítico,Europa,1987
+Lobo Cinzento,Outros,Perda de habitat,Em perigo,América do Norte,2012
+Iguana Verde,Mudanças climáticas,Mudanças climáticas,Em perigo,América do Norte,1917
+Macaco Prego,Outros,Poluição,Vulnerável,América do Sul,1951
+Tigre Branco,Poluição,Mudanças climáticas,Quase ameaçado,Europa,1987
+Panda Gigante,Poluição,Outros,Em perigo,África,1942
+Águia Real,Outros,Outros,Menos preocupante,América do Norte,2011
+Rinoceronte Negro,Perda de habitat,Perda de habitat,Menos preocupante,América do Norte,1932
+Urso Polar,Poluição,Caça ilegal,Em perigo,América do Sul,1959
+Gorila,Outros,Outros,Menos preocupante,África,2022
+Tigre Branco,Poluição,Perda de habitat,Em perigo,Ásia,1966
+Leão,Poluição,Poluição,Em perigo,América do Sul,2000
+Orangotango,Mudanças climáticas,Caça ilegal,Vulnerável,Ásia,1987
+Jacaré Americano,Poluição,Outros,Menos preocupante,América do Norte,1977
+Cavalo Selvagem,Poluição,Caça ilegal,Quase ameaçado,América do Norte,1921
+Elefante,Poluição,Perda de habitat,Em perigo,América do Sul,1952
+Lince,Caça ilegal,Caça ilegal,Em perigo,América do Sul,1964
+Tigre de Bengala,Caça ilegal,Mudanças climáticas,Quase ameaçado,África,1958
+Lince,Caça ilegal,Poluição,Quase ameaçado,África,1975
+Cavalo Selvagem,Mudanças climáticas,Caça ilegal,Menos preocupante,América do Norte,1934
+Tigre Branco,Outros,Perda de habitat,Vulnerável,América do Norte,2015
+Tigre de Bengala,Caça ilegal,Mudanças climáticas,Em perigo,Oceania,1962
+Lince,Outros,Perda de habitat,Em perigo,América do Norte,1966
+Elefante,Perda de habitat,Mudanças climáticas,Quase ameaçado,América do Norte,1987
+Panda Gigante,Outros,Perda de habitat,Em perigo,América do Sul,1907
+Macaco Prego,Caça ilegal,Caça ilegal,Vulnerável,América do Sul,1983
+Tubarão Branco,Mudanças climáticas,Perda de habitat,Crítico,Oceania,1956
+Lobo Cinzento,Perda de habitat,Caça ilegal,Menos preocupante,América do Norte,1974
+Tartaruga Marinha,Mudanças climáticas,Caça ilegal,Vulnerável,Oceania,2017
+Orangotango,Poluição,Poluição,Vulnerável,Ásia,1942
+Urso Polar,Outros,Caça ilegal,Vulnerável,Oceania,2023
+Golfinho,Poluição,Perda de habitat,Em perigo,Europa,1948
+Elefante,Mudanças climáticas,Poluição,Crítico,América do Sul,1980
+Gorila,Mudanças climáticas,Mudanças climáticas,Em perigo,África,1930
+Elefante,Perda de habitat,Perda de habitat,Quase ameaçado,Oceania,1949
+Elefante,Mudanças climáticas,Poluição,Vulnerável,Ásia,1987
+Tigre de Bengala,Mudanças climáticas,Outros,Em perigo,Oceania,1953
+Tubarão Branco,Mudanças climáticas,Perda de habitat,Quase ameaçado,Oceania,1981
+Elefante,Caça ilegal,Poluição,Crítico,Ásia,1903
+Tigre Branco,Poluição,Mudanças climáticas,Crítico,Europa,1914
+Elefante,Outros,Outros,Crítico,Europa,1970
+Rinoceronte Negro,Poluição,Outros,Vulnerável,Ásia,1917
+Elefante,Poluição,Perda de habitat,Quase ameaçado,Oceania,1981
+Tartaruga Marinha,Poluição,Outros,Em perigo,Oceania,2002
+Elefante,Caça ilegal,Caça ilegal,Vulnerável,América do Norte,1910
+Golfinho,Outros,Mudanças climáticas,Crítico,Oceania,1996
+Orangotango,Poluição,Mudanças climáticas,Menos preocupante,América do Norte,1969
+Orangotango,Caça ilegal,Caça ilegal,Menos preocupante,Ásia,1929
+Panda Gigante,Outros,Outros,Vulnerável,Europa,1909
+Lince,Poluição,Outros,Quase ameaçado,Oceania,1957
+Lobo Cinzento,Mudanças climáticas,Caça ilegal,Quase ameaçado,Europa,1925
+Tartaruga Marinha,Mudanças climáticas,Caça ilegal,Menos preocupante,América do Norte,1952
+Golfinho,Perda de habitat,Mudanças climáticas,Menos preocupante,América do Norte,1990
+Tigre de Bengala,Perda de habitat,Poluição,Vulnerável,Europa,1910
+Cavalo Selvagem,Poluição,Outros,Menos preocupante,África,1947
+Panda Gigante,Mudanças climáticas,Mudanças climáticas,Em perigo,África,1934
+Tigre Branco,Outros,Outros,Vulnerável,Oceania,2017
+Leão,Caça ilegal,Mudanças climáticas,Vulnerável,África,1945
+Leão,Outros,Mudanças climáticas,Vulnerável,África,1996
+Tubarão Branco,Mudanças climáticas,Outros,Menos preocupante,América do Sul,1963
+Iguana Verde,Perda de habitat,Mudanças climáticas,Em perigo,Europa,1967
+Condor Californiano,Caça ilegal,Outros,Quase ameaçado,Europa,1983
+Lobo Cinzento,Mudanças climáticas,Mudanças climáticas,Vulnerável,América do Sul,1983
+Lobo Cinzento,Outros,Mudanças climáticas,Em perigo,Ásia,1994
+Tigre de Bengala,Mudanças climáticas,Outros,Crítico,América do Sul,1927
+Gorila,Caça ilegal,Poluição,Em perigo,América do Sul,1905
+Águia Real,Perda de habitat,Caça ilegal,Quase ameaçado,América do Sul,1904
+Elefante,Mudanças climáticas,Poluição,Quase ameaçado,Oceania,2000
+Águia Real,Perda de habitat,Mudanças climáticas,Em perigo,América do Sul,1972
+Águia Real,Perda de habitat,Caça ilegal,Quase ameaçado,Ásia,1923
+Lince,Mudanças climáticas,Caça ilegal,Em perigo,América do Norte,1981
+Macaco Prego,Poluição,Outros,Quase ameaçado,Europa,2015
+Tubarão Branco,Mudanças climáticas,Perda de habitat,Vulnerável,Ásia,2012
+Iguana Verde,Perda de habitat,Mudanças climáticas,Quase ameaçado,Ásia,2009
+Orangotango,Mudanças climáticas,Poluição,Vulnerável,América do Sul,1958
+Golfinho,Perda de habitat,Caça ilegal,Vulnerável,América do Sul,2007
+Panda Gigante,Caça ilegal,Perda de habitat,Vulnerável,Europa,1946
+Tigre de Bengala,Poluição,Caça ilegal,Menos preocupante,Ásia,1945
+Golfinho,Caça ilegal,Perda de habitat,Crítico,Ásia,1949
+Gorila,Caça ilegal,Poluição,Crítico,América do Sul,1975
+Jacaré Americano,Mudanças climáticas,Perda de habitat,Quase ameaçado,África,1999
+Elefante,Caça ilegal,Mudanças climáticas,Menos preocupante,África,1912
+Tigre de Bengala,Outros,Perda de habitat,Crítico,América do Sul,1934
+Lince,Caça ilegal,Poluição,Vulnerável,Oceania,1946
+Gorila,Outros,Perda de habitat,Em perigo,Ásia,2011
+Macaco Prego,Mudanças climáticas,Mudanças climáticas,Vulnerável,Oceania,2006
+Cavalo Selvagem,Poluição,Mudanças climáticas,Quase ameaçado,África,2020
+Urso Polar,Outros,Mudanças climáticas,Menos preocupante,África,1924
+Orangotango,Perda de habitat,Outros,Em perigo,Ásia,2013
+Elefante,Caça ilegal,Outros,Crítico,África,1923
+Tartaruga Marinha,Mudanças climáticas,Caça ilegal,Vulnerável,Ásia,1911
+Tubarão Branco,Mudanças climáticas,Caça ilegal,Em perigo,América do Norte,1932
+Condor Californiano,Poluição,Mudanças climáticas,Crítico,Ásia,1970
+Tigre de Bengala,Outros,Perda de habitat,Vulnerável,África,1927
+Lince,Mudanças climáticas,Caça ilegal,Crítico,América do Sul,1936
+Lobo Cinzento,Mudanças climáticas,Mudanças climáticas,Quase ameaçado,Oceania,1913
+Tubarão Branco,Poluição,Mudanças climáticas,Menos preocupante,Oceania,2000
+Panda Gigante,Poluição,Outros,Vulnerável,América do Sul,2022
+Rinoceronte Negro,Mudanças climáticas,Outros,Menos preocupante,Oceania,1996
+Rinoceronte Negro,Perda de habitat,Perda de habitat,Menos preocupante,Ásia,1929
+Águia Real,Poluição,Outros,Em perigo,África,1923
+Iguana Verde,Perda de habitat,Caça ilegal,Menos preocupante,América do Norte,2004
+Lince,Mudanças climáticas,Poluição,Menos preocupante,América do Sul,1910
+Jacaré Americano,Outros,Mudanças climáticas,Vulnerável,África,1964
+Gorila,Poluição,Perda de habitat,Quase ameaçado,Europa,1908
+Leão,Caça ilegal,Outros,Quase ameaçado,Ásia,1924
+Lince,Perda de habitat,Perda de habitat,Menos preocupante,Oceania,1923
+Lince,Poluição,Caça ilegal,Crítico,América do Sul,1907
+Rinoceronte Negro,Outros,Outros,Vulnerável,Europa,2009
+Águia Real,Perda de habitat,Poluição,Crítico,América do Sul,1936
+Tigre Branco,Outros,Outros,Crítico,América do Norte,1933
+Macaco Prego,Perda de habitat,Caça ilegal,Crítico,Oceania,1919
+Lobo Cinzento,Mudanças climáticas,Caça ilegal,Crítico,África,1942
+Tigre Branco,Poluição,Outros,Menos preocupante,Europa,1909
+Condor Californiano,Mudanças climáticas,Caça ilegal,Menos preocupante,Oceania,2000
+Gorila,Mudanças climáticas,Outros,Crítico,América do Norte,1972
+Leão,Caça ilegal,Outros,Crítico,Ásia,1988
+Orangotango,Mudanças climáticas,Perda de habitat,Quase ameaçado,Europa,1952
+Tigre de Bengala,Outros,Mudanças climáticas,Crítico,Oceania,1938
+Panda Gigante,Outros,Caça ilegal,Em perigo,América do Norte,1923
+Macaco Prego,Perda de habitat,Outros,Vulnerável,Ásia,2017
+Elefante,Mudanças climáticas,Perda de habitat,Quase ameaçado,América do Sul,1913
+Golfinho,Caça ilegal,Perda de habitat,Crítico,América do Norte,1983
+Tigre Branco,Mudanças climáticas,Perda de habitat,Menos preocupante,Oceania,1946
+Tigre Branco,Perda de habitat,Mudanças climáticas,Em perigo,Europa,2012
+Panda Gigante,Outros,Poluição,Em perigo,Ásia,1968
+Condor Californiano,Outros,Perda de habitat,Crítico,África,2013
+Leão,Poluição,Outros,Crítico,América do Sul,2007
+Tigre de Bengala,Poluição,Perda de habitat,Quase ameaçado,Europa,1934
+Jacaré Americano,Outros,Poluição,Menos preocupante,África,1921
+Tigre Branco,Outros,Caça ilegal,Vulnerável,Ásia,2017
+Lobo Cinzento,Outros,Caça ilegal,Crítico,Ásia,1936
+Jacaré Americano,Poluição,Poluição,Crítico,Ásia,1936
+Golfinho,Caça ilegal,Perda de habitat,Menos preocupante,América do Norte,1904
+Jacaré Americano,Perda de habitat,Outros,Quase ameaçado,América do Norte,1976
+Tubarão Branco,Outros,Poluição,Menos preocupante,Ásia,1955
+Tubarão Branco,Caça ilegal,Outros,Crítico,África,1900
+Gorila,Poluição,Outros,Vulnerável,América do Sul,1911
+Gorila,Mudanças climáticas,Outros,Menos preocupante,África,1996
+Urso Polar,Outros,Poluição,Em perigo,Europa,1995
+Leão,Caça ilegal,Caça ilegal,Em perigo,Europa,1905
+Tigre Branco,Caça ilegal,Mudanças climáticas,Quase ameaçado,América do Sul,2020
+Golfinho,Outros,Perda de habitat,Menos preocupante,Oceania,1980
+Jacaré Americano,Caça ilegal,Perda de habitat,Menos preocupante,Oceania,2021
+Urso Polar,Mudanças climáticas,Perda de habitat,Em perigo,América do Norte,2015
+Cavalo Selvagem,Caça ilegal,Perda de habitat,Quase ameaçado,África,2017
+Tubarão Branco,Outros,Perda de habitat,Em perigo,África,2007
+Elefante,Perda de habitat,Mudanças climáticas,Vulnerável,Europa,1934
+Iguana Verde,Mudanças climáticas,Caça ilegal,Quase ameaçado,Oceania,1995
+Macaco Prego,Outros,Perda de habitat,Menos preocupante,América do Sul,1984
+Urso Polar,Poluição,Outros,Crítico,Ásia,1911
+Panda Gigante,Caça ilegal,Mudanças climáticas,Quase ameaçado,América do Sul,1952
+Tubarão Branco,Caça ilegal,Mudanças climáticas,Menos preocupante,África,1993
+Orangotango,Caça ilegal,Outros,Quase ameaçado,América do Sul,1932
+Lobo Cinzento,Outros,Caça ilegal,Vulnerável,América do Norte,2012
+Panda Gigante,Outros,Perda de habitat,Crítico,América do Norte,1965
+Tartaruga Marinha,Perda de habitat,Caça ilegal,Menos preocupante,Oceania,1927
+Leão,Caça ilegal,Caça ilegal,Em perigo,África,2011
+Gorila,Mudanças climáticas,Perda de habitat,Em perigo,Ásia,1998
+Golfinho,Perda de habitat,Caça ilegal,Em perigo,América do Norte,1980
+Lobo Cinzento,Perda de habitat,Caça ilegal,Crítico,Oceania,1916
+Tigre de Bengala,Caça ilegal,Outros,Vulnerável,América do Norte,1972
+Tubarão Branco,Perda de habitat,Outros,Crítico,América do Norte,1964
+Lobo Cinzento,Perda de habitat,Perda de habitat,Quase ameaçado,Europa,1954
+Iguana Verde,Poluição,Perda de habitat,Crítico,América do Norte,2010
+Leão,Perda de habitat,Poluição,Em perigo,América do Norte,2008
+Iguana Verde,Perda de habitat,Poluição,Vulnerável,América do Norte,1997
+Cavalo Selvagem,Mudanças climáticas,Perda de habitat,Menos preocupante,Ásia,1994
+Leão,Poluição,Outros,Em perigo,Ásia,1967
+Rinoceronte Negro,Mudanças climáticas,Outros,Crítico,Ásia,1909
+Águia Real,Caça ilegal,Mudanças climáticas,Crítico,Europa,1951
+Gorila,Mudanças climáticas,Perda de habitat,Crítico,Ásia,1968
+Elefante,Mudanças climáticas,Outros,Vulnerável,Europa,1944
+Iguana Verde,Caça ilegal,Poluição,Quase ameaçado,Ásia,1919
+Rinoceronte Negro,Caça ilegal,Outros,Quase ameaçado,África,1992
+Jacaré Americano,Outros,Poluição,Em perigo,África,1909
+Águia Real,Perda de habitat,Mudanças climáticas,Crítico,Oceania,1992
+Panda Gigante,Poluição,Poluição,Crítico,Europa,1925
+Panda Gigante,Mudanças climáticas,Perda de habitat,Menos preocupante,Europa,1951
+Golfinho,Outros,Poluição,Vulnerável,África,2013
+Golfinho,Outros,Mudanças climáticas,Em perigo,América do Norte,1958
+Urso Polar,Mudanças climáticas,Perda de habitat,Em perigo,Ásia,2008
+Jacaré Americano,Outros,Mudanças climáticas,Crítico,Oceania,1916
+Panda Gigante,Mudanças climáticas,Outros,Em perigo,América do Norte,1915
+Elefante,Perda de habitat,Caça ilegal,Crítico,América do Norte,1977
+Tigre Branco,Poluição,Outros,Em perigo,Oceania,1987
+Lince,Caça ilegal,Poluição,Em perigo,América do Sul,1974
+Urso Polar,Mudanças climáticas,Outros,Crítico,África,2005
+Cavalo Selvagem,Perda de habitat,Perda de habitat,Em perigo,Europa,1946
+Urso Polar,Caça ilegal,Outros,Menos preocupante,Ásia,1901
+Condor Californiano,Outros,Caça ilegal,Em perigo,América do Norte,1939
+Panda Gigante,Outros,Mudanças climáticas,Crítico,Europa,1924
+Rinoceronte Negro,Outros,Caça ilegal,Em perigo,Ásia,1971
+Orangotango,Caça ilegal,Mudanças climáticas,Quase ameaçado,América do Sul,2009
+Iguana Verde,Outros,Outros,Menos preocupante,Europa,2021
+Lobo Cinzento,Poluição,Poluição,Quase ameaçado,Ásia,1975
+Gorila,Caça ilegal,Mudanças climáticas,Em perigo,Oceania,1952
+Tartaruga Marinha,Mudanças climáticas,Caça ilegal,Crítico,África,1905
+Urso Polar,Outros,Outros,Vulnerável,Europa,1965
+Orangotango,Caça ilegal,Outros,Vulnerável,América do Sul,1923
+Orangotango,Perda de habitat,Caça ilegal,Menos preocupante,América do Norte,2004
+Jacaré Americano,Outros,Perda de habitat,Menos preocupante,América do Sul,1977
+Tubarão Branco,Outros,Poluição,Quase ameaçado,Ásia,1922
+Lince,Perda de habitat,Poluição,Em perigo,América do Norte,1900
+Panda Gigante,Caça ilegal,Mudanças climáticas,Vulnerável,Ásia,1922
+Macaco Prego,Poluição,Perda de habitat,Vulnerável,América do Sul,1929
+Orangotango,Poluição,Mudanças climáticas,Vulnerável,América do Norte,1937
+Elefante,Poluição,Poluição,Vulnerável,Europa,1923
+Jacaré Americano,Outros,Caça ilegal,Quase ameaçado,Ásia,1988
+Macaco Prego,Mudanças climáticas,Caça ilegal,Vulnerável,América do Sul,1926
+Golfinho,Perda de habitat,Caça ilegal,Quase ameaçado,América do Norte,1995
+Tubarão Branco,Caça ilegal,Poluição,Em perigo,América do Norte,1981
+Tigre Branco,Outros,Perda de habitat,Crítico,América do Norte,1906
+Jacaré Americano,Mudanças climáticas,Outros,Vulnerável,África,1919
+Macaco Prego,Outros,Caça ilegal,Vulnerável,Europa,1952
+Jacaré Americano,Outros,Mudanças climáticas,Vulnerável,América do Norte,1900
+Tartaruga Marinha,Mudanças climáticas,Caça ilegal,Crítico,América do Sul,1984
+Cavalo Selvagem,Poluição,Outros,Crítico,Ásia,2000
+Jacaré Americano,Mudanças climáticas,Poluição,Crítico,América do Sul,1925
+Lince,Caça ilegal,Outros,Crítico,Ásia,1923
+Águia Real,Poluição,Perda de habitat,Crítico,Ásia,1942
+Rinoceronte Negro,Mudanças climáticas,Poluição,Em perigo,Europa,1925
+Condor Californiano,Mudanças climáticas,Poluição,Menos preocupante,Oceania,1986
+Macaco Prego,Poluição,Perda de habitat,Quase ameaçado,Ásia,1907
+Tartaruga Marinha,Outros,Mudanças climáticas,Vulnerável,Ásia,1956
+Elefante,Perda de habitat,Mudanças climáticas,Vulnerável,América do Norte,2017
+Rinoceronte Negro,Poluição,Outros,Menos preocupante,América do Sul,1954
+Lince,Mudanças climáticas,Perda de habitat,Vulnerável,Oceania,1984
+Tubarão Branco,Mudanças climáticas,Mudanças climáticas,Menos preocupante,África,1944
+Rinoceronte Negro,Mudanças climáticas,Caça ilegal,Quase ameaçado,América do Norte,1983
+Gorila,Perda de habitat,Perda de habitat,Em perigo,Oceania,1996
+Tartaruga Marinha,Poluição,Perda de habitat,Menos preocupante,Oceania,1934
+Rinoceronte Negro,Poluição,Outros,Em perigo,Europa,1905
+Tartaruga Marinha,Perda de habitat,Mudanças climáticas,Em perigo,Ásia,2004
+Tigre Branco,Outros,Perda de habitat,Quase ameaçado,Europa,1922
+Iguana Verde,Outros,Poluição,Menos preocupante,África,1905
+Cavalo Selvagem,Caça ilegal,Caça ilegal,Em perigo,Oceania,1988
+Tigre Branco,Perda de habitat,Outros,Vulnerável,América do Sul,1934
+Orangotango,Caça ilegal,Caça ilegal,Crítico,Ásia,1940
+Golfinho,Poluição,Poluição,Em perigo,Europa,1993
+Golfinho,Poluição,Mudanças climáticas,Em perigo,Europa,2009
+Tigre Branco,Perda de habitat,Outros,Em perigo,Ásia,1968
+Gorila,Outros,Caça ilegal,Menos preocupante,América do Sul,1951
+Condor Californiano,Outros,Caça ilegal,Vulnerável,América do Norte,1948
+Panda Gigante,Perda de habitat,Outros,Crítico,América do Sul,1955
+Elefante,Mudanças climáticas,Perda de habitat,Quase ameaçado,América do Norte,1904
+Tartaruga Marinha,Poluição,Perda de habitat,Em perigo,Europa,1992
+Lince,Poluição,Mudanças climáticas,Vulnerável,América do Sul,2008
+Condor Californiano,Perda de habitat,Outros,Crítico,América do Norte,1949
+Urso Polar,Caça ilegal,Outros,Vulnerável,Oceania,1990
+Golfinho,Mudanças climáticas,Poluição,Vulnerável,América do Sul,2002
+Iguana Verde,Caça ilegal,Perda de habitat,Crítico,África,1968
+Tigre de Bengala,Poluição,Poluição,Menos preocupante,América do Norte,1910
+Elefante,Perda de habitat,Perda de habitat,Menos preocupante,Europa,1922
+Rinoceronte Negro,Mudanças climáticas,Caça ilegal,Quase ameaçado,África,2018
+Macaco Prego,Poluição,Outros,Em perigo,África,1934
+Iguana Verde,Poluição,Mudanças climáticas,Quase ameaçado,Ásia,1919
+Orangotango,Caça ilegal,Outros,Menos preocupante,Ásia,2022
+Rinoceronte Negro,Poluição,Mudanças climáticas,Em perigo,África,1966
+Urso Polar,Poluição,Outros,Em perigo,África,1991
+Rinoceronte Negro,Perda de habitat,Caça ilegal,Crítico,América do Sul,1901
+Tubarão Branco,Perda de habitat,Perda de habitat,Vulnerável,Oceania,2017
+Lobo Cinzento,Caça ilegal,Outros,Quase ameaçado,América do Norte,1925
+Tartaruga Marinha,Caça ilegal,Mudanças climáticas,Vulnerável,Ásia,1940
+Panda Gigante,Outros,Mudanças climáticas,Crítico,Oceania,1951
+Golfinho,Mudanças climáticas,Outros,Vulnerável,América do Sul,1952
+Rinoceronte Negro,Caça ilegal,Poluição,Menos preocupante,Ásia,1931
+Cavalo Selvagem,Outros,Poluição,Quase ameaçado,Europa,1931
+Macaco Prego,Outros,Poluição,Quase ameaçado,Oceania,2004
+Jacaré Americano,Outros,Poluição,Quase ameaçado,Europa,1934
+Águia Real,Perda de habitat,Perda de habitat,Em perigo,América do Norte,1920
+Lince,Poluição,Mudanças climáticas,Quase ameaçado,Oceania,1980
+Urso Polar,Mudanças climáticas,Caça ilegal,Quase ameaçado,América do Norte,1919
+Orangotango,Poluição,Outros,Crítico,América do Norte,2002
+Cavalo Selvagem,Perda de habitat,Mudanças climáticas,Em perigo,América do Norte,1978
+Tartaruga Marinha,Mudanças climáticas,Mudanças climáticas,Menos preocupante,Europa,1987
+Elefante,Outros,Outros,Crítico,Europa,1976
+Orangotango,Mudanças climáticas,Poluição,Vulnerável,América do Sul,1929
+Golfinho,Poluição,Outros,Crítico,América do Sul,2011
+Jacaré Americano,Mudanças climáticas,Mudanças climáticas,Vulnerável,Oceania,1942
+Elefante,Perda de habitat,Outros,Em perigo,América do Norte,2020
+Águia Real,Perda de habitat,Poluição,Em perigo,Ásia,1961
+Lince,Outros,Poluição,Menos preocupante,Europa,1949
+Orangotango,Mudanças climáticas,Mudanças climáticas,Em perigo,Ásia,1917
+Urso Polar,Poluição,Caça ilegal,Crítico,América do Sul,1986
+Golfinho,Poluição,Poluição,Vulnerável,Oceania,1911
+Cavalo Selvagem,Perda de habitat,Caça ilegal,Vulnerável,América do Norte,1972
+Águia Real,Perda de habitat,Outros,Crítico,Ásia,1987
+Condor Californiano,Outros,Poluição,Em perigo,África,1980
+Tigre de Bengala,Mudanças climáticas,Mudanças climáticas,Vulnerável,África,1970
+Condor Californiano,Perda de habitat,Outros,Quase ameaçado,Europa,1946
+Águia Real,Outros,Mudanças climáticas,Crítico,América do Sul,2016
+Jacaré Americano,Mudanças climáticas,Outros,Quase ameaçado,Oceania,1984
+Elefante,Caça ilegal,Outros,Menos preocupante,Ásia,1990
+Tigre de Bengala,Perda de habitat,Poluição,Crítico,Europa,1943
+Rinoceronte Negro,Outros,Perda de habitat,Quase ameaçado,América do Norte,2000
+Rinoceronte Negro,Outros,Perda de habitat,Crítico,América do Norte,1932
+Panda Gigante,Caça ilegal,Poluição,Vulnerável,Europa,1990
+Urso Polar,Caça ilegal,Outros,Crítico,América do Sul,1998
+Urso Polar,Perda de habitat,Perda de habitat,Crítico,Europa,2021
+Gorila,Outros,Caça ilegal,Em perigo,Oceania,1912
+Tartaruga Marinha,Outros,Outros,Vulnerável,América do Sul,1946
+Tubarão Branco,Caça ilegal,Mudanças climáticas,Em perigo,África,1919
+Lobo Cinzento,Mudanças climáticas,Caça ilegal,Em perigo,Oceania,2007
+Golfinho,Perda de habitat,Outros,Quase ameaçado,América do Sul,1949
+Tigre de Bengala,Perda de habitat,Perda de habitat,Vulnerável,Oceania,1927
+Elefante,Poluição,Outros,Quase ameaçado,Oceania,1977
+Tartaruga Marinha,Caça ilegal,Mudanças climáticas,Vulnerável,América do Norte,1909
+Gorila,Mudanças climáticas,Poluição,Vulnerável,Europa,1961
+Leão,Caça ilegal,Perda de habitat,Em perigo,Oceania,1940
+Gorila,Poluição,Poluição,Em perigo,Ásia,1975
+Tartaruga Marinha,Mudanças climáticas,Perda de habitat,Crítico,América do Sul,1938
+Tartaruga Marinha,Caça ilegal,Perda de habitat,Vulnerável,Europa,1925
+Leão,Caça ilegal,Perda de habitat,Crítico,América do Norte,2018
+Orangotango,Poluição,Caça ilegal,Menos preocupante,Ásia,2002
+Iguana Verde,Poluição,Poluição,Crítico,África,1955
+Tigre Branco,Perda de habitat,Caça ilegal,Menos preocupante,Ásia,1930
+Lince,Mudanças climáticas,Mudanças climáticas,Crítico,Oceania,1928
+Iguana Verde,Perda de habitat,Poluição,Quase ameaçado,Ásia,1961
+Iguana Verde,Poluição,Poluição,Quase ameaçado,África,1974
+Rinoceronte Negro,Caça ilegal,Mudanças climáticas,Quase ameaçado,Oceania,1986
+Macaco Prego,Perda de habitat,Caça ilegal,Em perigo,Ásia,1906
+Elefante,Outros,Poluição,Crítico,Europa,1944
+Rinoceronte Negro,Poluição,Outros,Menos preocupante,América do Norte,1961
+Orangotango,Perda de habitat,Poluição,Vulnerável,Europa,1940
+Lince,Perda de habitat,Outros,Menos preocupante,África,1922
+Tigre Branco,Mudanças climáticas,Poluição,Vulnerável,Ásia,1996
+Águia Real,Mudanças climáticas,Perda de habitat,Em perigo,África,1924
+Gorila,Perda de habitat,Poluição,Quase ameaçado,Oceania,2008
+Condor Californiano,Poluição,Caça ilegal,Vulnerável,América do Sul,1996
+Águia Real,Caça ilegal,Poluição,Menos preocupante,Ásia,2011
+Panda Gigante,Caça ilegal,Perda de habitat,Menos preocupante,América do Sul,1941
+Urso Polar,Outros,Outros,Quase ameaçado,América do Norte,1920
+Macaco Prego,Mudanças climáticas,Poluição,Quase ameaçado,América do Norte,2017
+Lince,Outros,Caça ilegal,Crítico,Europa,2015
+Leão,Caça ilegal,Mudanças climáticas,Vulnerável,Oceania,1988
+Águia Real,Mudanças climáticas,Poluição,Em perigo,América do Sul,1922
+Tubarão Branco,Perda de habitat,Outros,Vulnerável,Oceania,2006
+Condor Californiano,Perda de habitat,Mudanças climáticas,Crítico,América do Sul,2000
+Tigre Branco,Mudanças climáticas,Perda de habitat,Menos preocupante,Ásia,2007
+Jacaré Americano,Mudanças climáticas,Mudanças climáticas,Quase ameaçado,África,1917
+Tigre de Bengala,Outros,Outros,Quase ameaçado,América do Norte,1951
+Macaco Prego,Outros,Poluição,Menos preocupante,América do Norte,2011
+Tubarão Branco,Perda de habitat,Mudanças climáticas,Em perigo,Ásia,1996
+Iguana Verde,Outros,Caça ilegal,Vulnerável,América do Norte,1968
+Águia Real,Poluição,Mudanças climáticas,Crítico,Ásia,1932
+Condor Californiano,Poluição,Poluição,Em perigo,Europa,1925
+Condor Californiano,Outros,Caça ilegal,Quase ameaçado,América do Sul,1995
+Tigre de Bengala,Mudanças climáticas,Perda de habitat,Quase ameaçado,América do Norte,1955
+Tartaruga Marinha,Mudanças climáticas,Poluição,Quase ameaçado,América do Sul,1969
+Jacaré Americano,Perda de habitat,Perda de habitat,Em perigo,Europa,2007
+Orangotango,Poluição,Outros,Crítico,América do Sul,1917
+Elefante,Poluição,Poluição,Quase ameaçado,Oceania,1900
+Leão,Mudanças climáticas,Outros,Menos preocupante,Ásia,1974
+Cavalo Selvagem,Caça ilegal,Poluição,Crítico,América do Norte,2017
+Águia Real,Mudanças climáticas,Outros,Menos preocupante,América do Sul,1986
+Leão,Perda de habitat,Outros,Vulnerável,Europa,1996
+Leão,Perda de habitat,Outros,Vulnerável,América do Sul,1939
+Tubarão Branco,Poluição,Mudanças climáticas,Vulnerável,África,1990
+Orangotango,Outros,Poluição,Quase ameaçado,África,1971
+Águia Real,Perda de habitat,Perda de habitat,Quase ameaçado,Ásia,1951
+Elefante,Outros,Perda de habitat,Crítico,América do Norte,1975
+Lince,Perda de habitat,Perda de habitat,Crítico,África,1948
+Condor Californiano,Mudanças climáticas,Perda de habitat,Vulnerável,América do Norte,1936
+Leão,Outros,Perda de habitat,Menos preocupante,África,2007
+Elefante,Mudanças climáticas,Poluição,Quase ameaçado,América do Norte,1919
+Lobo Cinzento,Perda de habitat,Perda de habitat,Menos preocupante,Oceania,1948
+Orangotango,Caça ilegal,Caça ilegal,Menos preocupante,Oceania,1913
+Urso Polar,Perda de habitat,Mudanças climáticas,Vulnerável,África,2011
+Tubarão Branco,Outros,Caça ilegal,Menos preocupante,África,1989
+Macaco Prego,Caça ilegal,Poluição,Quase ameaçado,África,1989
+Iguana Verde,Caça ilegal,Perda de habitat,Vulnerável,América do Norte,2023
+Tartaruga Marinha,Caça ilegal,Poluição,Crítico,Europa,1931
+Lobo Cinzento,Outros,Perda de habitat,Quase ameaçado,América do Sul,1981
+Panda Gigante,Perda de habitat,Mudanças climáticas,Vulnerável,Ásia,1941
+Lince,Caça ilegal,Poluição,Quase ameaçado,Oceania,2000
+Urso Polar,Perda de habitat,Mudanças climáticas,Quase ameaçado,Oceania,1999
+Lobo Cinzento,Caça ilegal,Poluição,Menos preocupante,África,1923
+Tigre Branco,Poluição,Perda de habitat,Menos preocupante,América do Norte,1924
+Condor Californiano,Perda de habitat,Poluição,Em perigo,América do Norte,2006
+Lobo Cinzento,Caça ilegal,Outros,Vulnerável,África,1997
+Orangotango,Caça ilegal,Outros,Quase ameaçado,Europa,1997
+Tubarão Branco,Poluição,Perda de habitat,Crítico,Oceania,1966
+Jacaré Americano,Outros,Mudanças climáticas,Quase ameaçado,Europa,1942
+Condor Californiano,Perda de habitat,Caça ilegal,Quase ameaçado,América do Norte,1948
+Macaco Prego,Poluição,Perda de habitat,Crítico,África,1910
+Tubarão Branco,Perda de habitat,Mudanças climáticas,Em perigo,América do Norte,2009
+Panda Gigante,Perda de habitat,Perda de habitat,Em perigo,África,1984
+Tartaruga Marinha,Caça ilegal,Caça ilegal,Vulnerável,África,1962
+Iguana Verde,Mudanças climáticas,Outros,Crítico,Europa,1968
